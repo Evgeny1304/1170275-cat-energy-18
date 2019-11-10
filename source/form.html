@@ -6,9 +6,13 @@
 </head>
 <body>
 <header class="header container">
-    <a href="index.html" class="header__logo"><img src="" alt="Логотип Кэт энерджи"></a>
+    <a href="index.html" class="header__logo">
+        <img src="" alt="Логотип Кэт энерджи">
+    </a>
     <nav class="header__navigation navigation">
-        <button type="button" class="navigation__toggle"><img src="" alt="Кнопка открытия/скрытия меню"></button>
+        <button type="button" class="navigation__toggle">
+            <img src="" alt="Кнопка открытия/скрытия меню">
+        </button>
         <ul class="navigation__menu menu">
             <li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
             <li class="menu__item"><a href="catalog.html" class="menu__link">Каталог продукции</a></li>
@@ -17,7 +21,80 @@
     </nav>
 </header>
 <main class="main">
-
+    <section class="program-select container">
+        <h1 class="program-select__title">Подбор программы</h1>
+        <p class="program-select__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <form action="https://echo.htmlacademy.ru" method="post" class="program-select__form request">
+            <fieldset class="request__item">
+                <label class="request__label">
+                    Имя:*
+                    <input type="text" placeholder="Барсик" class="request__field">
+                </label>
+                <label class="request__label">
+                    Вес (кг):*
+                    <input type="text" placeholder="7" class="request__field">
+                </label>
+                <label class="request__label">
+                    Возраст (лет):
+                    <input type="text" placeholder="7" class="request__field">
+                </label>
+            </fieldset>
+            <fieldset class="request__item">
+                <ul class="request__list program">
+                    <li class="program__item">
+                        <input id="prog1" type="radio" name="prog-group" class="program__radio" checked>
+                        <label for="prog1" class="program__label">Похудение</label>
+                    </li>
+                    <li class="program__item">
+                        <input id="prog2" type="radio" name="prog-group" class="program__radio">
+                        <label for="prog2" class="program__label">Набор массы</label>
+                    </li>
+                    <li class="program__item">
+                        <input id="prog3" type="radio" name="prog-group" class="program__radio">
+                        <label for="prog3" class="program__label">Не знаю (Нужен ваш совет)</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="request__item">
+                <legend class="request__title">Контактные данные (владельца кота)</legend>
+                <label class="request__label">
+                    E-mail:*
+                    <input type="email" placeholder="kuklachev@gmail.com" class="request__field">
+                </label>
+                <label class="request__label">
+                    Телефон:*
+                    <input type="text" placeholder="8 (960) 900-60-90" class="request__field">
+                </label>
+            </fieldset>
+            <fieldset class="request__item">
+                <legend class="request__title">Комментарий</legend>
+                <textarea name="comment-text" class="request__comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </fieldset>
+            <fieldset class="request__item">
+                <legend class="request__title">Дополнительно</legend>
+                <ul class="request__list product-list">
+                    <li class="product-list__item">
+                        <input id="prod1" type="checkbox" class="product-list__checkbox" checked>
+                        <label for="prod1" class="product-list__label">Сахарозаменитель</label>
+                    </li>
+                    <li class="product-list__item">
+                        <input id="prod2" type="checkbox" class="product-list__checkbox">
+                        <label for="prod2" class="product-list__label">Питьевая вода</label>
+                    </li>
+                    <li class="product-list__item">
+                        <input id="prod3" type="checkbox" class="product-list__checkbox">
+                        <label for="prod3" class="product-list__label">Молоко</label>
+                    </li>
+                    <li class="product-list__item">
+                        <input id="prod4" type="checkbox" class="product-list__checkbox">
+                        <label for="prod4" class="product-list__label">Витамины</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <button type="submit" class="request__btn">Отправить заявку</button>
+            <p class="request__text">* — Обязательные поля</p>
+        </form>
+    </section>
 </main>
 <footer class="footer container">
     <div class="footer__contact contact">
@@ -26,7 +103,9 @@
         <img src="" alt="Местонахождение Кэт энерджи на карте" class="contact__map">
     </div>
     <div class="footer__wrapper">
-        <a href="index.html" class="footer__logo"><img src="" alt="Логотип Кэт энерджи"></a>
+        <a href="index.html" class="footer__logo">
+            <img src="" alt="Логотип Кэт энерджи">
+        </a>
         <ul class="footer__social social">
             <li class="social__item"><a href="https://vk.com" class="social__link">Вконтакте</a></li>
             <li class="social__item"><a href="https://instagram.com" class="social__link">Instagram</a></li>
@@ -34,7 +113,9 @@
         </ul>
         <div class="footer__develop develop">
             <p class="develop__text">HTML Academy</p>
-            <a href="https://htmlacademy.ru/intensive/adaptive" class="develop__link"><img src="" alt="Логотип HTML Academy" class="develop__logo"></a>
+            <a href="https://htmlacademy.ru/intensive/adaptive" class="develop__link">
+                <img src="" alt="Логотип HTML Academy" class="develop__logo">
+            </a>
         </div>
     </div>
 </footer>
