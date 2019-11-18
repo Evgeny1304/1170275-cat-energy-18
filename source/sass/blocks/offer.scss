@@ -31,10 +31,12 @@
   text-transform: uppercase;
   background-color: $backgr-base;
   padding: 17px 74px 11px 74px;
+
   &:hover,
   &:focus {
     background-color: #5eaa2f;
   }
+
   &:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: #5eaa2f;
