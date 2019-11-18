@@ -1,0 +1,15 @@
+.spec-list {
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+}
+
+.spec-list__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.spec-list__text {
+  font-size: 12px;
+  line-height: 16px;
+}

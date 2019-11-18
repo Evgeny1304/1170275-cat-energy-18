@@ -1,0 +1,13 @@
+.social {
+  @include list-transform;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid rgba($color-base, 0.1);
+  border-bottom: 1px solid rgba($color-base, 0.1);
+  padding-top: 26px;
+  padding-bottom: 24px;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 36px;
+}
