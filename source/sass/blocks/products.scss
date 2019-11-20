@@ -1,13 +1,13 @@
 .products {
   @include list-transform;
-  border-top: 1px solid rgba($color-base, 0.1);
+  border-top: 1px solid rgba($tundora, 0.1);
   display: flex;
   flex-direction: column;
 }
 
 .products__item {
   padding: 25px 0;
-  border-bottom: 1px solid rgba($color-base, 0.1);
+  border-bottom: 1px solid rgba($tundora, 0.1);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,14 +36,14 @@
 }
 
 .products__link {
-  @include link-block;
+  @include element-block;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   color: #ffffff;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  background-color: $backgr-base;
+  background-color: $apple;
   padding: 13px 110px;
 
   &:hover,
@@ -74,7 +74,7 @@
 .products__link--btn {
   border: none;
   cursor: pointer;
-  color: $color-base;
+  color: $tundora;
   background-color: #f2f2f2;
 
   &:hover,
@@ -84,6 +84,6 @@
 
   &:active {
     background-color: #ebebeb;
-    color: rgba($color-base, 0.3);
+    color: rgba($tundora, 0.3);
   }
 }

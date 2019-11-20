@@ -1,13 +1,13 @@
 .extra-products {
   @include list-transform;
-  border-top: 1px solid rgba($color-base, 0.1);
+  border-top: 1px solid rgba($tundora, 0.1);
   padding-top: 14px;
   padding-bottom: 14px;
 }
 
 .extra-products__item {
   padding-bottom: 17px;
-  border-bottom: 1px solid rgba($color-base, 0.1);
+  border-bottom: 1px solid rgba($tundora, 0.1);
 
   &:not(:last-child) {
     margin-bottom: 14px;
@@ -25,14 +25,14 @@
 }
 
 .extra-products__link {
-  @include link-block;
+  @include element-block;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   color: #ffffff;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  background-color: $backgr-base;
+  background-color: $apple;
   padding: 13px 110px;
 
   &:hover,

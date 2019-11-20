@@ -1,0 +1,15 @@
+.product-list {
+  @include list-transform;
+}
+
+.product-list__item:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+.product-list__label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #222222;
+}

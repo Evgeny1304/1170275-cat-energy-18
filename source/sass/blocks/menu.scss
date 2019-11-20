@@ -5,7 +5,7 @@
 }
 
 .menu__link {
-  @include link-block;
+  @include element-block;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
@@ -14,5 +14,5 @@
   padding-top: 24px;
   padding-bottom: 21px;
   width: 100%;
-  border-bottom: 1px solid rgba($color-base, 0.1);
+  border-bottom: 1px solid rgba($tundora, 0.1);
 }
