@@ -1,0 +1,18 @@
+.menu {
+  @include list-transform;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu__link {
+  @include element-block;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111111;
+  padding-top: 24px;
+  padding-bottom: 21px;
+  width: 100%;
+  border-bottom: 1px solid rgba($tundora, 0.1);
+}

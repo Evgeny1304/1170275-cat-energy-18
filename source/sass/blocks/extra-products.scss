@@ -1,0 +1,47 @@
+.extra-products {
+  @include list-transform;
+  border-top: 1px solid rgba($tundora, 0.1);
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.extra-products__item {
+  padding-bottom: 17px;
+  border-bottom: 1px solid rgba($tundora, 0.1);
+
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
+}
+
+.extra-products__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.extra-products__link {
+  @include element-block;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: $apple;
+  padding: 13px 110px;
+
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5eaa2f;
+  }
+}

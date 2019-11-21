@@ -1,0 +1,19 @@
+.program {
+  @include list-transform;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+  padding-top: 21px;
+  padding-bottom: 22px;
+}
+
+.program__item:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+.program__label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #222222;
+}

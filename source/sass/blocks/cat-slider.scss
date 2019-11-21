@@ -1,0 +1,23 @@
+.cat-slider {
+  display: flex;
+  justify-content: center;
+}
+
+.cat-slider__btn {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.cat-slider__btn--before {
+  margin-right: 20px;
+}
+
+.cat-slider__btn--after {
+  margin-left: 20px;
+}
