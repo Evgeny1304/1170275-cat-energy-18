@@ -1,0 +1,36 @@
+.navigation {
+  position: relative;
+}
+
+.navigation__toggle {
+  position: absolute;
+  top: -33px;
+  right: 0;
+  width: 25px;
+  height: 19px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
+}
+
+.navigation--closed .navigation__toggle {
+  background-image: url("../../img/icon-mobile-menu.svg");
+}
+
+.navigation--open .navigation__toggle {
+  width: 19px;
+  background-image: url("../../img/icon-close.svg");
+}
+
+@media (max-width: $mobile-width-only) {
+  .navigation--closed .menu {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .navigation__toggle {
+    display: none;
+  }
+}
