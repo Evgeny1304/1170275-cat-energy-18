@@ -13,3 +13,21 @@
   margin: 0;
   margin-bottom: 33px;
 }
+
+@media (min-width: $tablet-width) {
+  .demo-effect {
+    background-color: #ffffff;
+  }
+
+  .demo-effect__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .demo-effect__wrapper {
+    display: flex;
+  }
+}

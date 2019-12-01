@@ -1,6 +1,8 @@
 .menu {
   @include list-transform;
   border-top: 1px solid rgba($tundora, 0.1);
+  margin-right: -20px;
+  margin-left: -20px;
 }
 
 .menu__link {
@@ -21,6 +23,8 @@
   .menu {
     display: flex;
     border: none;
+    margin-right: 0;
+    margin-left: 0;
   }
 
   .menu__item:not(:last-child) {

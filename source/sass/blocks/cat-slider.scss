@@ -21,3 +21,16 @@
 .cat-slider__btn--after {
   margin-left: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .cat-slider__btn {
+    font-size: 20px;
+    border-bottom: 1px dotted rgba($tundora, 0.23);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cat-slider {
+    flex: 1 0 50%;
+  }
+}

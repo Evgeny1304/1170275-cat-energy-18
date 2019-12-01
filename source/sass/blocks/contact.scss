@@ -1,11 +1,10 @@
-.contact {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
 .contact--main {
   background-color: #ffffff;
+}
+
+.contact__wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .contact__title {
@@ -15,11 +14,32 @@
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
-  flex: 1 0 20%;
+  margin: 0;
+  max-width: 154px;
 }
 
 .contact__address {
   line-height: 20px;
   font-style: normal;
-  flex: 1 0 20%;
+  max-width: 154px;
+}
+
+@media (min-width: $tablet-width) {
+  .contact__title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .contact__address {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    max-width: 157px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contact__wrapper {
+    display: none;
+  }
 }

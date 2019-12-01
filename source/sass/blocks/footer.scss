@@ -6,3 +6,11 @@
 .footer__wrapper {
   padding-top: 39px;
 }
+
+@media (min-width: $tablet-width) {
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
