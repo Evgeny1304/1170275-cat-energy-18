@@ -45,3 +45,42 @@
     background-color: #5eaa2f;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .extra-products__item {
+    border-left: 1px solid rgba($tundora, 0.1);
+    border-right: 1px solid rgba($tundora, 0.1);
+    margin: 0;
+    padding: 28px 37px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+
+  .extra-products__title {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+  }
+
+  .extra-products__link {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra-products__item {
+    border-left: none;
+    border-right: none;
+    padding: 16px 0;
+  }
+
+  .extra-products__link {
+    width: auto;
+  }
+}

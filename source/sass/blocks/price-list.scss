@@ -1,9 +1,30 @@
 .price-list {
   display: flex;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
   margin-bottom: 14px;
 }
 
 .price-list__item {
   line-height: 14px;
+}
+
+@media (min-width: $tablet-width) {
+  .price-list {
+    margin-left: auto;
+    margin-bottom: 23px;
+  }
+
+  .price-list__item {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price-list {
+    margin-bottom: 0;
+    margin-right: 39px;
+  }
 }
