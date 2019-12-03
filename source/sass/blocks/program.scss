@@ -2,8 +2,7 @@
   @include list-transform;
   border-top: 1px solid #ededed;
   border-bottom: 1px solid #ededed;
-  padding-top: 21px;
-  padding-bottom: 22px;
+  padding: 20px;
 }
 
 .program__item:not(:last-child) {
@@ -16,4 +15,16 @@
   font-weight: 400;
   text-transform: uppercase;
   color: #222222;
+}
+
+@media (min-width: $tablet-width) {
+  .program {
+    border: 1px solid #ededed;
+    padding: 25px 28px;
+  }
+
+  .program__label {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

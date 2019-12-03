@@ -29,15 +29,15 @@
     <form action="https://echo.htmlacademy.ru" method="post" class="program-select__form request">
       <fieldset class="request__item">
         <label class="request__label">
-          Имя:*
+          <span>Имя:*</span>
           <input type="text" placeholder="Барсик" class="request__field">
         </label>
         <label class="request__label">
-          Вес (кг):*
+          <span>Вес (кг):*</span>
           <input type="text" placeholder="7" class="request__field">
         </label>
         <label class="request__label">
-          Возраст (лет):
+          <span>Возраст (лет):</span>
           <input type="text" placeholder="7" class="request__field">
         </label>
       </fieldset>
@@ -60,11 +60,11 @@
       <fieldset class="request__item">
         <legend class="request__title">Контактные данные (владельца кота)</legend>
         <label class="request__label">
-          E-mail:*
+          <span>E-mail:*</span>
           <input type="email" placeholder="kuklachev@gmail.com" class="request__field">
         </label>
         <label class="request__label">
-          Телефон:*
+          <span>Телефон:*</span>
           <input type="text" placeholder="8 (960) 900-60-90" class="request__field">
         </label>
       </fieldset>
@@ -94,8 +94,10 @@
           </li>
         </ul>
       </fieldset>
-      <button type="submit" class="request__btn">Отправить заявку</button>
-      <p class="request__text">* — Обязательные поля</p>
+      <div class="request__wrap">
+        <button type="submit" class="request__btn">Отправить заявку</button>
+        <p class="request__text">* — Обязательные поля</p>
+      </div>
     </form>
   </section>
 </main>

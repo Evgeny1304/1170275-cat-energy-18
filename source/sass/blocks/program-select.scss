@@ -21,3 +21,18 @@
   margin: 0;
   margin-bottom: 39px;
 }
+
+@media (min-width: $tablet-width) {
+  .program-select__title {
+    font-size: 60px;
+    margin-bottom: 53px;
+  }
+
+  .program-select__text {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 360px;
+    margin-bottom: 69px;
+    padding-left: 36px;
+  }
+}
