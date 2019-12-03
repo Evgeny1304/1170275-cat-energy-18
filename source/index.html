@@ -11,12 +11,12 @@
   <a class="header__logo">
     <img src="img/logo-mobile.svg" width="191" height="39" alt="Логотип Кэт энерджи">
   </a>
-  <nav class="header__navigation navigation">
+  <nav class="header__navigation navigation navigation--closed">
     <button type="button" class="navigation__toggle">
-      <img src="" alt="Кнопка открытия/скрытия меню">
+
     </button>
     <ul class="navigation__menu menu">
-      <li class="menu__item"><a class="menu__link">Главная</a></li>
+      <li class="menu__item"><a class="menu__link menu__link--active">Главная</a></li>
       <li class="menu__item"><a href="catalog.html" class="menu__link">Каталог продукции</a></li>
       <li class="menu__item"><a href="form.html" class="menu__link">Подбор программы</a></li>
     </ul>
@@ -24,9 +24,11 @@
 </header>
 <main class="main">
   <section class="offer container">
-    <h1 class="offer__title">Функциональное питание для котов</h1>
-    <p class="offer__text">Занялся собой? Займись котом!</p>
-    <a href="#" class="offer__link">Подобрать программу</a>
+    <div class="offer__wrapper">
+      <h1 class="offer__title">Функциональное питание для котов</h1>
+      <p class="offer__text">Занялся собой? Займись котом!</p>
+      <a href="#" class="offer__link">Подобрать программу</a>
+    </div>
   </section>
   <section class="features container">
     <ul class="features__list">
@@ -59,33 +61,39 @@
   </section>
   <section class="demo-effect container">
     <h2 class="demo-effect__title">Живой пример</h2>
-    <div class="demo-effect__results results">
-      <p class="results__intro">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-        Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему
-        спит по 16 часов в день.</p>
-      <dl class="results__list">
-        <div class="results__wrap">
-          <dt class="results__item results__item--value">5 кг</dt>
-          <dd class="results__item">снижение веса</dd>
+    <div class="demo-effect__wrapper">
+      <div class="demo-effect__results results">
+        <p class="results__intro">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+          Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему
+          спит по 16 часов в день.</p>
+        <div class="results__wrapper">
+          <dl class="results__list">
+            <div class="results__box">
+              <dt class="results__item results__item--value">5 кг</dt>
+              <dd class="results__item">снижение веса</dd>
+            </div>
+            <div class="results__box">
+              <dt class="results__item results__item--value">60 дней</dt>
+              <dd class="results__item">затрачено времени</dd>
+            </div>
+          </dl>
+          <p class="results__total">Затраты на питание: <span>15 000 руб.</span></p>
         </div>
-        <div class="results__wrap">
-          <dt class="results__item results__item--value">60 дней</dt>
-          <dd class="results__item">затрачено времени</dd>
-        </div>
-      </dl>
-      <p class="results__total">Затраты на питание: 15 000 руб.</p>
-    </div>
-    <div class="demo-effect__cat-slider cat-slider">
-      <button type="button" class="cat-slider__btn cat-slider__btn--before">Было</button>
-      <div class="cat-slider__range"></div>
-      <button type="button" class="cat-slider__btn cat-slider__btn--after">Стало</button>
+      </div>
+      <div class="demo-effect__cat-slider cat-slider">
+        <button type="button" class="cat-slider__btn cat-slider__btn--before">Было</button>
+        <div class="cat-slider__range"></div>
+        <button type="button" class="cat-slider__btn cat-slider__btn--after">Стало</button>
+      </div>
     </div>
   </section>
 </main>
 <footer class="footer container">
   <div class="footer__contact contact contact--main">
-    <h3 class="contact__title">Приглашаем к сотрудничеству дилеров!</h3>
-    <address class="contact__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+    <div class="contact__wrapper">
+      <h3 class="contact__title">Приглашаем к сотрудничеству дилеров!</h3>
+      <address class="contact__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+    </div>
     <img src="" alt="Местонахождение Кэт энерджи на карте" class="contact__map">
   </div>
   <div class="footer__wrapper">
@@ -105,5 +113,6 @@
     </div>
   </div>
 </footer>
+<script src="js/mobile-menu.js"></script>
 </body>
 </html>

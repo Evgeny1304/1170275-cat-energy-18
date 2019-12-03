@@ -12,3 +12,11 @@
   margin: 0;
   margin-bottom: 30px;
 }
+
+@media (min-width: $tablet-width) {
+  .extra-catalog__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 75px;
+  }
+}

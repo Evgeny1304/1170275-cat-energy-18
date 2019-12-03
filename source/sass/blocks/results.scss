@@ -8,21 +8,29 @@
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  margin-bottom: 22px;
 }
 
-.results__wrap {
+.results__box {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 13px;
-  margin-bottom: 22px;
+  border: 1px solid #cdcdcd;
+  flex: 1 0 44%;
+  padding: 13px 20px 0 20px;
+
+  &:not(:nth-child(2n)) {
+    margin-right: 32px;
+  }
 }
 
 .results__item {
   font-size: 12px;
   line-height: 12px;
+  text-align: center;
+  background-color: #f2f2f2;
   margin: 0;
+  margin-bottom: -17px;
 }
 
 .results__item--value {
@@ -41,4 +49,96 @@
   text-transform: uppercase;
   color: #111111;
   text-align: center;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .results {
+    background-color: #ffffff;
+  }
+
+  .results__intro {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 56px;
+  }
+
+  .results__wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+  }
+
+  .results__list {
+    margin-bottom: 0;
+  }
+
+  .results__box {
+    flex: 1 0 50%;
+
+    &:not(:nth-child(2n)) {
+      margin-right: 42px;
+    }
+  }
+
+  .results__item {
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: -6px;
+    background-color: #ffffff;
+  }
+
+  .results__item--value {
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 19px;
+  }
+
+  .results__total {
+    margin-left: auto;
+    max-width: 140px;
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .results {
+    background-color: #f2f2f2;
+  }
+
+  .results__intro {
+    margin-bottom: 70px;
+  }
+
+  .results__wrapper {
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 0;
+    flex: 1 0 50%;
+  }
+
+  .results__list {
+    margin-bottom: 48px;
+  }
+
+  .results__box {
+    max-width: 162px;
+    flex-basis: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .results__item {
+    background-color: #f2f2f2;
+  }
+
+  .results__total {
+    margin-left: 0;
+    text-align: left;
+    max-width: 100%;
+
+    span {
+      margin-left: 64px;
+    }
+  }
 }

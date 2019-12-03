@@ -11,3 +11,10 @@
 .social__item:not(:last-child) {
   margin-right: 36px;
 }
+
+@media (min-width: $tablet-width) {
+  .social {
+    border: none;
+    padding: 0;
+  }
+}

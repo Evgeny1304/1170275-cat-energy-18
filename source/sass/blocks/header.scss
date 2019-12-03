@@ -1,5 +1,27 @@
 .header {
   font-family: "Oswald", "Arial", sans-serif;
   padding-top: 11px;
-  padding-bottom: 21px;
+}
+
+.header__logo {
+  @include element-block;
+  margin-bottom: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__logo {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    background-color: $apple;
+  }
 }

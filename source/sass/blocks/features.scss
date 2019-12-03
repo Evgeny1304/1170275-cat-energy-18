@@ -5,8 +5,6 @@
 
 .features__list {
   @include list-transform;
-  display: flex;
-  flex-direction: column;
 }
 
 .features__item {
@@ -21,7 +19,7 @@
 .features__box {
   border-bottom: 1px solid rgba($tundora, 0.1);
   padding-bottom: 23px;
-  padding-right: 16px;
+  padding-right: 15px;
   margin-bottom: 20px;
 }
 
@@ -51,5 +49,60 @@
 
   &:active {
     color: rgba(17, 17, 17, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .features__item {
+    padding: 81px 0 62px 52px;
+  }
+
+  .features__box {
+    border: none;
+    padding-right: 285px;
+    padding-bottom: 0;
+    margin-bottom: 61px;
+  }
+
+  .features__title {
+    font-size: 36px;
+    line-height: 37px;
+  }
+
+  .features__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .features__link {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__list {
+    display: flex;
+  }
+
+  .features__item {
+    margin-bottom: 0;
+    flex: 1 0 46.5%;
+    padding-right: 56px;
+
+    &:not(:last-child) {
+      margin-right: 80px;
+      margin-bottom: 0;
+    }
+  }
+
+  .features__box {
+    padding-right: 0;
+    margin-bottom: 36px;
+  }
+
+  .features__title {
+    text-align: center;
+    margin-bottom: 75px;
   }
 }
