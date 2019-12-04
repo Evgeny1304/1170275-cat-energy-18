@@ -13,26 +13,9 @@
   margin-bottom: 35px;
 }
 
-.program-select__text {
-  line-height: 18px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #111111;
-  margin: 0;
-  margin-bottom: 39px;
-}
-
 @media (min-width: $tablet-width) {
   .program-select__title {
     font-size: 60px;
     margin-bottom: 53px;
-  }
-
-  .program-select__text {
-    font-size: 20px;
-    line-height: 30px;
-    max-width: 360px;
-    margin-bottom: 69px;
-    padding-left: 36px;
   }
 }

@@ -25,48 +25,52 @@
 <main class="main">
   <section class="program-select container">
     <h1 class="program-select__title">Подбор программы</h1>
-    <p class="program-select__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
     <form action="https://echo.htmlacademy.ru" method="post" class="program-select__form request">
-      <fieldset class="request__item">
-        <label class="request__label">
-          <span>Имя:*</span>
-          <input type="text" placeholder="Барсик" class="request__field">
-        </label>
-        <label class="request__label">
-          <span>Вес (кг):*</span>
-          <input type="text" placeholder="7" class="request__field">
-        </label>
-        <label class="request__label">
-          <span>Возраст (лет):</span>
-          <input type="text" placeholder="7" class="request__field">
-        </label>
-      </fieldset>
-      <fieldset class="request__item">
-        <ul class="request__list program">
-          <li class="program__item">
-            <input id="prog1" type="radio" name="prog-group" class="program__radio" checked>
-            <label for="prog1" class="program__label">Похудение</label>
-          </li>
-          <li class="program__item">
-            <input id="prog2" type="radio" name="prog-group" class="program__radio">
-            <label for="prog2" class="program__label">Набор массы</label>
-          </li>
-          <li class="program__item">
-            <input id="prog3" type="radio" name="prog-group" class="program__radio">
-            <label for="prog3" class="program__label">Не знаю (Нужен ваш совет)</label>
-          </li>
-        </ul>
-      </fieldset>
+      <h2 class="request__heading">Заполните анкету и мы подберем программу питания для вашего кота</h2>
+      <div class="request__box">
+        <fieldset class="request__item">
+          <label class="request__label">
+            <span>Имя:*</span>
+            <input type="text" placeholder="Барсик" class="request__field">
+          </label>
+          <label class="request__label">
+            <span>Вес (кг):*</span>
+            <input type="text" placeholder="7" class="request__field">
+          </label>
+          <label class="request__label">
+            <span>Возраст (лет):</span>
+            <input type="text" placeholder="7" class="request__field">
+          </label>
+        </fieldset>
+        <fieldset class="request__item">
+          <ul class="request__list program">
+            <li class="program__item">
+              <input id="prog1" type="radio" name="prog-group" class="program__radio" checked>
+              <label for="prog1" class="program__label">Похудение</label>
+            </li>
+            <li class="program__item">
+              <input id="prog2" type="radio" name="prog-group" class="program__radio">
+              <label for="prog2" class="program__label">Набор массы</label>
+            </li>
+            <li class="program__item">
+              <input id="prog3" type="radio" name="prog-group" class="program__radio">
+              <label for="prog3" class="program__label">Не знаю (Нужен ваш совет)</label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
       <fieldset class="request__item">
         <legend class="request__title">Контактные данные (владельца кота)</legend>
-        <label class="request__label">
-          <span>E-mail:*</span>
-          <input type="email" placeholder="kuklachev@gmail.com" class="request__field">
-        </label>
-        <label class="request__label">
-          <span>Телефон:*</span>
-          <input type="text" placeholder="8 (960) 900-60-90" class="request__field">
-        </label>
+        <div class="request__box">
+          <label class="request__label">
+            <span>E-mail:*</span>
+            <input type="email" placeholder="kuklachev@gmail.com" class="request__field">
+          </label>
+          <label class="request__label">
+            <span>Телефон:*</span>
+            <input type="text" placeholder="8 (960) 900-60-90" class="request__field">
+          </label>
+        </div>
       </fieldset>
       <fieldset class="request__item">
         <legend class="request__title">Комментарий</legend>
@@ -101,15 +105,15 @@
     </form>
   </section>
 </main>
-<footer class="footer container">
+<footer class="footer">
   <div class="footer__contact contact">
-    <div class="contact__wrapper">
+    <div class="contact__wrapper container">
       <h3 class="contact__title">Приглашаем к сотрудничеству дилеров!</h3>
       <address class="contact__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
     </div>
     <img src="" alt="Местонахождение Кэт энерджи на карте" class="contact__map">
   </div>
-  <div class="footer__wrapper">
+  <div class="footer__wrapper container">
     <a href="index.html" class="footer__logo">
       <img src="" alt="Логотип Кэт энерджи">
     </a>

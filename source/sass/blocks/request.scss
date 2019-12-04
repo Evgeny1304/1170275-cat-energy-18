@@ -1,3 +1,12 @@
+.request__heading {
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #111111;
+  margin: 0;
+  margin-bottom: 39px;
+}
+
 .request__item {
   border: none;
   margin: 0;
@@ -73,6 +82,7 @@
 .request__btn {
   border: none;
   cursor: pointer;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   color: #ffffff;
   font-size: 16px;
@@ -106,6 +116,13 @@
     padding: 0 36px;
   }
 
+  .request__heading {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 325px;
+    margin-bottom: 69px;
+  }
+
   .request__title {
     font-size: 36px;
     line-height: 36px;
@@ -137,7 +154,41 @@
 
   .request__wrap {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+  }
+
+  .request__btn {
+    margin-bottom: 0;
+    font-size: 20px;
+    padding: 17px 0 15px 0;
+    flex-basis: 44.5%;
+    margin-right: 61px;
+  }
+
+  .request__text {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .request {
+    padding: 0;
+  }
+
+  .request__box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .request__box .request__item {
+    flex-basis: 46.7%;
+  }
+
+  .request__box .request__label {
+    flex-basis: 46.7%;
+  }
+
+  .request__btn {
+    margin-right: 81px;
   }
 }
