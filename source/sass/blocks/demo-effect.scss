@@ -15,6 +15,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .demo-effect {
+    background-color: #ffffff;
+  }
+
   .demo-effect__title {
     font-size: 60px;
     line-height: 60px;
@@ -23,6 +27,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .demo-effect {
+    background-color: #f2f2f2;
+  }
+
   .demo-effect__wrapper {
     display: flex;
   }
