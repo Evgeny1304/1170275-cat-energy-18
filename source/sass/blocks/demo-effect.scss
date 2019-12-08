@@ -27,7 +27,23 @@
 }
 
 @media (min-width: $desktop-width) {
+  .demo-effect {
+    background-color: #f2f2f2;
+    padding-top: 0;
+  }
+
+  .demo-effect__title-wrapper {
+    background-color: #ffffff;
+    padding: 33px 0;
+  }
+
+  .demo-effect__title {
+    margin: 0;
+  }
+
   .demo-effect__wrapper {
     display: flex;
+    width: $desktop-width;
+    padding: 0 40px;
   }
 }

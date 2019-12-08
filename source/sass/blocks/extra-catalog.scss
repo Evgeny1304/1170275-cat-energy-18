@@ -20,3 +20,10 @@
     margin-bottom: 75px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .extra-catalog {
+    padding: 0;
+    flex-basis: 73.5%;
+  }
+}

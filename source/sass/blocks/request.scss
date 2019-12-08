@@ -1,3 +1,13 @@
+.request__heading {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #111111;
+  margin: 0;
+  margin-bottom: 39px;
+}
+
 .request__item {
   border: none;
   margin: 0;
@@ -19,9 +29,14 @@
   align-items: center;
   font-size: 16px;
   line-height: 18px;
+  font-weight: 400;
   text-transform: uppercase;
   color: #222222;
   margin-bottom: 14px;
+
+  span {
+    margin-right: 16px;
+  }
 }
 
 .request__field {
@@ -32,10 +47,20 @@
   flex-grow: 1;
 
   &::placeholder {
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 16px;
     line-height: 18px;
+    font-weight: 400;
     text-transform: uppercase;
     color: $tundora;
+  }
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    border: 2px solid $tundora;
   }
 }
 
@@ -46,8 +71,10 @@
   width: 100%;
 
   &::placeholder {
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 16px;
     line-height: 18px;
+    font-weight: 400;
     text-transform: uppercase;
     color: $tundora;
   }
@@ -56,6 +83,7 @@
 .request__btn {
   border: none;
   cursor: pointer;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   color: #ffffff;
   font-size: 16px;
@@ -82,4 +110,86 @@
   line-height: 16px;
   text-align: center;
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .request {
+    padding: 0 36px;
+  }
+
+  .request__heading {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 325px;
+    margin-bottom: 69px;
+  }
+
+  .request__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 70px;
+  }
+
+  .request__item {
+    margin-bottom: 20px;
+  }
+
+  .request__label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .request__field {
+    height: 52px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+
+  .request__comment::placeholder {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .request__wrap {
+    display: flex;
+    align-items: center;
+  }
+
+  .request__btn {
+    margin-bottom: 0;
+    font-size: 20px;
+    padding: 17px 0 15px 0;
+    flex-basis: 44.5%;
+    margin-right: 61px;
+  }
+
+  .request__text {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .request {
+    padding: 0;
+  }
+
+  .request__box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .request__box .request__item {
+    flex-basis: 46.7%;
+  }
+
+  .request__box .request__label {
+    flex-basis: 46.7%;
+  }
+
+  .request__btn {
+    margin-right: 81px;
+  }
 }
