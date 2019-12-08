@@ -1,4 +1,4 @@
-.cat-slider {
+.cat-slider__wrapper {
   display: flex;
   justify-content: center;
 }
@@ -36,5 +36,10 @@
 @media (min-width: $desktop-width) {
   .cat-slider {
     flex: 1 0 50%;
+  }
+
+  .cat-slider__wrapper {
+    width: auto;
+    padding: 0;
   }
 }
