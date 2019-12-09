@@ -1,10 +1,29 @@
 .offer {
   font-family: "Oswald", "Arial", sans-serif;
   color: #ffffff;
-  background-color: $apple;
+  background: linear-gradient(0deg, #ffffff 34%, #68b738 34%);
   text-align: center;
   padding-top: 29px;
   padding-bottom: 22px;
+  position: relative;
+  z-index: 0;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 320px;
+    height: 305px;
+    background-image: url("../../img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 320px auto;
+    z-index: -1;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../../img/index-background-mobile@2x.jpg");
+    }
+  }
 }
 
 .offer__title {
@@ -43,9 +62,15 @@
   }
 }
 
+.offer__image {
+  position: absolute;
+  top: 167px;
+  left: 20px;
+}
+
 @media (min-width: $tablet-width) {
   .offer {
-    background-color: #ffffff;
+    background: transparent;
     text-align: left;
     padding-left: 100px;
     padding-top: 68px;
@@ -74,5 +99,11 @@
     line-height: 20px;
     padding-right: 25px;
     padding-left: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .offer {
+    background: linear-gradient(90deg, #ffffff 50%, #68b738 50%);
   }
 }
