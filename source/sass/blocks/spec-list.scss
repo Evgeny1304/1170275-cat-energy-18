@@ -15,6 +15,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .spec-list {
+    margin-left: 0;
+    width: 250px;
+  }
+
   .spec-list__item {
     border-bottom: 1px solid rgba($tundora, 0.1);
     padding: 10px 0;
@@ -23,5 +28,11 @@
   .spec-list__text {
     font-size: 16px;
     line-height: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .spec-list {
+    width: 169px;
   }
 }

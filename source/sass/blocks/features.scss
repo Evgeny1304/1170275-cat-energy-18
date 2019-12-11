@@ -9,11 +9,42 @@
 
 .features__item {
   background-color: #f2f2f2;
-  padding: 22px 20px;
+  padding: 24px 20px;
+  position: relative;
 
   &:not(:last-child) {
     margin-bottom: 20px;
   }
+
+  &::before {
+    position: absolute;
+    top: 20px;
+    left: 22px;
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: $apple;
+  }
+
+  &::after {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    content: "";
+    width: 35px;
+    height: 49px;
+    background-image: url("../../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.features__item--pro::after {
+  top: 30px;
+  left: 13px;
+  width: 67px;
+  height: 28px;
+  background-image: url("../../img/icon-cat-pro.svg");
 }
 
 .features__box {
@@ -32,6 +63,7 @@
   color: #111111;
   margin: 0;
   margin-bottom: 36px;
+  padding-left: 70px;
 }
 
 .features__text {
@@ -46,15 +78,57 @@
   font-weight: 400;
   text-transform: uppercase;
   color: #111111;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 5px;
+    right: -35px;
+    content: "";
+    width: 25px;
+    height: 12px;
+    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:hover::before {
+    right: -40px;
+    width: 34px;
+    background-image: url("../../img/icon-right-arrow-verylong.svg");
+  }
 
   &:active {
-    color: rgba(17, 17, 17, 0.3);
+    opacity: 0.3;
   }
 }
 
 @media (min-width: $tablet-width) {
   .features__item {
     padding: 81px 0 62px 52px;
+
+    &::before {
+      top: 92px;
+      left: auto;
+      right: 62px;
+      width: 200px;
+      height: 200px;
+    }
+
+    &::after {
+      top: 80px;
+      left: auto;
+      right: 92px;
+      width: 141px;
+      height: 194px;
+    }
+  }
+
+  .features__item--pro::after {
+    top: 135px;
+    left: auto;
+    right: 28px;
+    width: 268px;
+    height: 113px;
   }
 
   .features__box {
@@ -67,6 +141,7 @@
   .features__title {
     font-size: 36px;
     line-height: 37px;
+    padding: 0;
   }
 
   .features__text {
@@ -77,6 +152,10 @@
   .features__link {
     font-size: 20px;
     line-height: 20px;
+
+    &::before {
+      top: 9px;
+    }
   }
 }
 
@@ -94,6 +173,30 @@
       margin-right: 80px;
       margin-bottom: 0;
     }
+
+    &::before {
+      top: 47px;
+      left: 52px;
+      right: auto;
+      width: 100px;
+      height: 100px;
+    }
+
+    &::after {
+      top: 41px;
+      left: 65px;
+      right: auto;
+      width: 71px;
+      height: 97px;
+    }
+  }
+
+  .features__item--pro::after {
+    top: 69px;
+    left: 34px;
+    right: auto;
+    width: 134px;
+    height: 57px;
   }
 
   .features__box {

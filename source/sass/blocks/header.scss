@@ -15,13 +15,20 @@
     align-items: center;
   }
 
-  .header__logo {
+  .header__logo-image {
     margin-bottom: 0;
+    width: 174px;
+    height: 59px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .header {
+  .header--main {
     background: linear-gradient(90deg, #ffffff 50%, #68b738 50%);
+  }
+
+  .header__logo-image {
+    width: 203px;
+    height: 60px;
   }
 }
