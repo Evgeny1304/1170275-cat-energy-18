@@ -1,7 +1,6 @@
 .offer {
   font-family: "Oswald", "Arial", sans-serif;
   color: #ffffff;
-  background: linear-gradient(0deg, #ffffff 34%, #68b738 34%);
   text-align: center;
   padding-top: 29px;
   padding-bottom: 22px;
@@ -15,6 +14,7 @@
     content: "";
     width: 320px;
     height: 305px;
+    background-color: $apple;
     background-image: url("../../img/index-background-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-size: 320px auto;
@@ -65,7 +65,8 @@
 .offer__image {
   position: absolute;
   top: 167px;
-  left: 20px;
+  left: 50%;
+  margin-left: -140px;
 }
 
 @media (min-width: $tablet-width) {
@@ -74,6 +75,11 @@
     text-align: left;
     padding-left: 100px;
     padding-top: 68px;
+    padding-bottom: 540px;
+
+    &::before {
+      display: none;
+    }
   }
 
   .offer__wrapper {
@@ -100,10 +106,27 @@
     padding-right: 25px;
     padding-left: 25px;
   }
+
+  .offer__image {
+    width: 709px;
+    height: 609px;
+    z-index: -1;
+    top: auto;
+    bottom: 5px;
+    margin-left: -354.5px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .offer {
-    background: linear-gradient(90deg, #ffffff 50%, #68b738 50%);
+    padding-bottom: 320px;
+  }
+
+  .offer__image {
+    bottom: auto;
+    top: 20px;
+    width: 552px;
+    height: 499px;
+    margin-left: -170px;
   }
 }
