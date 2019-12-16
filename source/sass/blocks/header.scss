@@ -36,11 +36,12 @@
       right: 0;
       content: "";
       width: calc(100% / 2 - 40px);
-      height: 696px;
+      height: 660px;
       background-color: $apple;
       background-image: url("../../img/index-background-desktop@1x.jpg");
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: 680px auto;
+      background-position: right top;
       z-index: -1;
 
       @media (min-resolution: $retina-dppx) {
