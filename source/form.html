@@ -4,9 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Кэт энерджи - Подбор программы</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+<div style="display: none;">
+  <include src="build/img/sprite.svg"></include>
+</div>
 <header class="header container">
   <a href="index.html" class="header__logo">
     <picture>
@@ -49,7 +52,7 @@
         <fieldset class="request__item">
           <ul class="request__list program">
             <li class="program__item">
-              <input id="prog1" type="radio" name="prog-group" class="program__radio" checked>
+              <input id="prog1" type="radio" name="prog-group" class="program__radio" checked="">
               <label for="prog1" class="program__label">Похудение</label>
             </li>
             <li class="program__item">
@@ -78,14 +81,13 @@
       </fieldset>
       <fieldset class="request__item">
         <legend class="request__title">Комментарий</legend>
-        <textarea name="comment-text" class="request__comment" cols="30" rows="10"
-                  placeholder="Расскажите обо всех повадках кота"></textarea>
+        <textarea name="comment-text" class="request__comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
       <fieldset class="request__item">
         <legend class="request__title">Дополнительно</legend>
         <ul class="request__list product-list">
           <li class="product-list__item">
-            <input id="prod1" type="checkbox" class="product-list__checkbox" checked>
+            <input id="prod1" type="checkbox" class="product-list__checkbox" checked="">
             <label for="prod1" class="product-list__label">Сахарозаменитель</label>
           </li>
           <li class="product-list__item">
