@@ -274,25 +274,41 @@
 </main>
 <footer class="footer">
   <div class="footer__contact contact">
-    <div class="contact__wrapper container">
+    <div class="contact__wrapper contact__wrapper--pages container">
       <h3 class="contact__title">Приглашаем к сотрудничеству дилеров!</h3>
       <address class="contact__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
     </div>
-    <img src="" alt="Местонахождение Кэт энерджи на карте" class="contact__map">
+    <picture>
+      <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+      <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+      <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="320" height="400" alt="Местонахождение Кэт энерджи на карте" class="contact__map">
+    </picture>
   </div>
   <div class="footer__wrapper container">
     <a href="index.html" class="footer__logo">
-      <img src="" alt="Логотип Кэт энерджи">
+      <img src="img/logo-footer.svg" width="128" height="24" alt="Логотип Кэт энерджи">
     </a>
     <ul class="footer__social social">
-      <li class="social__item"><a href="https://vk.com" class="social__link">Вконтакте</a></li>
-      <li class="social__item"><a href="https://instagram.com" class="social__link">Instagram</a></li>
-      <li class="social__item"><a href="https://facebook.com" class="social__link">Facebook</a></li>
+      <li class="social__item">
+        <a href="https://vk.com" class="social__link">
+          <svg class="social__icon" width="22" height="12"><use xlink:href="#icon-vk"></use></svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="https://instagram.com" class="social__link">
+          <svg class="social__icon" width="16" height="16"><use xlink:href="#icon-insta"></use></svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="https://facebook.com" class="social__link">
+          <svg class="social__icon" width="10" height="19"><use xlink:href="#icon-fb"></use></svg>
+        </a>
+      </li>
     </ul>
     <div class="footer__develop develop">
       <p class="develop__text">HTML Academy</p>
       <a href="https://htmlacademy.ru/intensive/adaptive" class="develop__link">
-        <img src="" alt="Логотип HTML Academy" class="develop__logo">
+        <svg class="develop__logo" width="27" height="34"><use xlink:href="#icon-htmlacademy"></use></svg>
       </a>
     </div>
   </div>
