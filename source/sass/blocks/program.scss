@@ -15,6 +15,43 @@
   font-weight: 400;
   text-transform: uppercase;
   color: #222222;
+  padding-left: 46px;
+  padding-bottom: 13px;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+
+.program__radio + .program__label::before {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: solid 1px #cdcdcd;
+}
+
+.program__radio:checked + .program__label::after {
+  position: absolute;
+  top: 4px;
+  left: 9px;
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: $apple;
+}
+
+.program__radio:hover + .program__label::before,
+.program__radio:focus + .program__label::before {
+  border: solid 1px #bababa;
+}
+
+.program__radio:active + .program__label {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
@@ -26,5 +63,18 @@
   .program__label {
     font-size: 20px;
     line-height: 20px;
+    padding-left: 60px;
+  }
+
+  .program__radio + .program__label::before {
+    width: 40px;
+    height: 40px;
+  }
+
+  .program__radio:checked + .program__label::after {
+    top: 6px;
+    left: 11px;
+    width: 18px;
+    height: 18px;
   }
 }

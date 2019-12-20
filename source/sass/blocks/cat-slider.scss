@@ -42,6 +42,10 @@
   background-color: $apple;
 }
 
+.cat-slider__control {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .cat-slider {
     background-color: #f2f2f2;
@@ -67,6 +71,7 @@
   }
 
   .cat-slider__control {
+    display: block;
     position: absolute;
     top: -14px;
     left: 50%;
@@ -78,11 +83,46 @@
     box-shadow: 0 2px 5px 0 rgba(#000000, 0.15);
     border: solid 1px #cdcdcd;
     background-color: #ffffff;
+
+    &::before {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: $apple;
+    }
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 3px 5px 0 rgba(#000000, 0.25);
+    }
+
+    &:active {
+      box-shadow: 0 4px 5px 0 rgba(#000000, 0.3);
+      border: 2px solid $apple;
+
+      &::before {
+        top: 11px;
+        left: 11px;
+      }
+    }
   }
 
   .cat-slider__btn {
     font-size: 20px;
     border-bottom: 1px dotted rgba($tundora, 0.23);
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid rgba($tundora, 0.23);
+    }
+
+    &:active {
+      border-bottom: 1px solid transparent;
+    }
   }
 }
 
