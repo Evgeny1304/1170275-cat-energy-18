@@ -1,10 +1,13 @@
-.contact--main {
-  background-color: #ffffff;
-}
-
 .contact__wrapper {
   display: flex;
   justify-content: space-between;
+  padding-top: 33px;
+  padding-bottom: 28px;
+  background-color: #ffffff;
+}
+
+.contact__wrapper--pages {
+  background-color: #f2f2f2;
 }
 
 .contact__title {
@@ -24,10 +27,19 @@
   max-width: 154px;
 }
 
+.contact__map {
+  display: block;
+}
+
 @media (min-width: $tablet-width) {
   .contact__title {
     font-size: 20px;
     line-height: 25px;
+  }
+
+  .contact__wrapper {
+    padding-top: 66px;
+    padding-bottom: 59px;
   }
 
   .contact__address {
@@ -36,10 +48,31 @@
     text-align: right;
     max-width: 157px;
   }
+
+  .contact__map {
+    width: 767px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .contact__map {
+    width: 1440px;
+  }
+
+  .contact {
+    position: relative;
+  }
+
   .contact__wrapper {
-    display: none;
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    max-width: 570px;
+    padding-left: 76px;
+    padding-right: 90px;
+  }
+
+  .contact__wrapper--pages {
+    background-color: #ffffff;
   }
 }

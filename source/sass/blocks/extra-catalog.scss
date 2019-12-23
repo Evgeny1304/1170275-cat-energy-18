@@ -11,6 +11,17 @@
   color: #111111;
   margin: 0;
   margin-bottom: 30px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 15px;
+    margin-left: 24px;
+    content: "";
+    width: 100vw;
+    height: 3px;
+    background-color: $apple;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -18,6 +29,10 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 75px;
+
+    &::after {
+      top: 20px;
+    }
   }
 }
 

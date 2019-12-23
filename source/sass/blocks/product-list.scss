@@ -12,6 +12,42 @@
   font-weight: 400;
   text-transform: uppercase;
   color: #222222;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  padding-left: 46px;
+  padding-bottom: 13px;
+}
+
+.product-list__checkbox + .product-list__label::before {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  content: "";
+  width: 30px;
+  height: 30px;
+  border: solid 1px #cdcdcd;
+}
+
+.product-list__checkbox:checked + .product-list__label::after {
+  position: absolute;
+  top: 1px;
+  left: 5px;
+  content: "";
+  width: 22px;
+  height: 17px;
+  background-image: url("../../img/icon-tick.svg");
+  background-repeat: no-repeat;
+}
+
+.product-list__checkbox:hover + .product-list__label::before,
+.product-list__checkbox:focus + .product-list__label::before {
+  border: solid 1px #bababa;
+}
+
+.product-list__checkbox:active + .product-list__label {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
@@ -23,8 +59,6 @@
   }
 
   .product-list__item {
-    padding-left: 60px;
-
     &:nth-child(1),
     &:nth-child(2) {
       margin-bottom: 32px;
@@ -38,5 +72,16 @@
   .product-list__label {
     font-size: 20px;
     line-height: 20px;
+    padding-left: 60px;
+  }
+
+  .product-list__checkbox + .product-list__label::before {
+    width: 40px;
+    height: 40px;
+  }
+
+  .product-list__checkbox:checked + .product-list__label::after {
+    top: 6px;
+    left: 11px;
   }
 }

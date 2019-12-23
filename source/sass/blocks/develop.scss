@@ -8,6 +8,20 @@
 .develop__text {
   font-size: 16px;
   line-height: 16px;
+  margin: 0;
+}
+
+.develop__logo {
+  fill: #666666;
+}
+
+.develop__link:hover .develop__logo,
+.develop__link:focus .develop__logo {
+  fill: $apple;
+}
+
+.develop__link:active .develop__logo {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {

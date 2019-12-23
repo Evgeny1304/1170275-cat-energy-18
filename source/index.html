@@ -4,9 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+<div style="display: none;">
+  <include src="build/img/sprite.svg"></include>
+</div>
 <header class="header header--main container">
   <a class="header__logo">
     <picture>
@@ -97,35 +100,63 @@
       </div>
       <div class="demo-effect__cat-slider cat-slider">
         <div class="cat-slider__wrapper container">
-          <button type="button" class="cat-slider__btn cat-slider__btn--before">Было</button>
-          <div class="cat-slider__range"></div>
-          <button type="button" class="cat-slider__btn cat-slider__btn--after">Стало</button>
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+            <img class="cat-slider__img" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Изображение кота до тренировок">
+          </picture>
+          <div class="cat-slider__range-box">
+            <button type="button" class="cat-slider__btn cat-slider__btn--before">Было</button>
+            <div class="cat-slider__range">
+              <div class="cat-slider__scale">
+                <div class="cat-slider__bar"></div>
+                <button type="button" class="cat-slider__control"></button>
+              </div>
+            </div>
+            <button type="button" class="cat-slider__btn cat-slider__btn--after">Стало</button>
+          </div>
         </div>
       </div>
     </div>
   </section>
 </main>
 <footer class="footer">
-  <div class="footer__contact contact contact--main">
+  <div class="footer__contact contact">
     <div class="contact__wrapper container">
       <h3 class="contact__title">Приглашаем к сотрудничеству дилеров!</h3>
       <address class="contact__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
     </div>
-    <img src="" alt="Местонахождение Кэт энерджи на карте" class="contact__map">
+    <picture>
+      <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+      <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+      <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="320" height="400" alt="Местонахождение Кэт энерджи на карте" class="contact__map">
+    </picture>
   </div>
   <div class="footer__wrapper container">
     <a class="footer__logo">
-      <img src="" alt="Логотип Кэт энерджи">
+      <img src="img/logo-footer.svg" width="128" height="24" alt="Логотип Кэт энерджи">
     </a>
     <ul class="footer__social social">
-      <li class="social__item"><a href="https://vk.com" class="social__link">Вконтакте</a></li>
-      <li class="social__item"><a href="https://instagram.com" class="social__link">Instagram</a></li>
-      <li class="social__item"><a href="https://facebook.com" class="social__link">Facebook</a></li>
+      <li class="social__item">
+        <a href="https://vk.com" class="social__link">
+          <svg class="social__icon" width="22" height="12"><use xlink:href="#icon-vk"></use></svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="https://instagram.com" class="social__link">
+          <svg class="social__icon" width="16" height="16"><use xlink:href="#icon-insta"></use></svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="https://facebook.com" class="social__link">
+          <svg class="social__icon" width="10" height="19"><use xlink:href="#icon-fb"></use></svg>
+        </a>
+      </li>
     </ul>
     <div class="footer__develop develop">
       <p class="develop__text">HTML Academy</p>
       <a href="https://htmlacademy.ru/intensive/adaptive" class="develop__link">
-        <img src="" alt="Логотип HTML Academy" class="develop__logo">
+        <svg class="develop__logo" width="27" height="34"><use xlink:href="#icon-htmlacademy"></use></svg>
       </a>
     </div>
   </div>
