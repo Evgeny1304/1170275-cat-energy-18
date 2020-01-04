@@ -39,7 +39,18 @@
     &::after {
       top: 20px;
       right: -30px;
-      width: 110%;
+      width: 100vw;
+    }
+
+    &::before {
+      position: absolute;
+      top: 20px;
+      left: 30px;
+      content: "";
+      width: 90vw;
+      height: 3px;
+      background-color: $apple;
+      z-index: -1;
     }
   }
 }
@@ -52,5 +63,10 @@
 
   .extra-catalog__title::after {
     right: -40px;
+  }
+
+  .extra-catalog__title::before {
+    left: 50px;
+    width: 93vw;
   }
 }
