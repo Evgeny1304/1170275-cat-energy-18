@@ -1,11 +1,11 @@
 .header {
   font-family: "Oswald", "Arial", sans-serif;
-  padding-top: 11px;
+  padding-top: 12px;
 }
 
 .header__logo {
   @include element-block;
-  margin-bottom: 15px;
+  margin-bottom: 11px;
 }
 
 @media (min-width: $tablet-width) {
@@ -13,6 +13,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 24px;
   }
 
   .header__logo {

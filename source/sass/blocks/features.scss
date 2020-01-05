@@ -1,6 +1,5 @@
 .features {
-  padding-top: 22px;
-  padding-bottom: 32px;
+  padding-bottom: 17px;
 }
 
 .features__list {
@@ -9,7 +8,7 @@
 
 .features__item {
   background-color: #f2f2f2;
-  padding: 24px 20px;
+  padding: 30px 20px 20px 20px;
   position: relative;
 
   &:not(:last-child) {
@@ -18,7 +17,7 @@
 
   &::before {
     position: absolute;
-    top: 20px;
+    top: 25px;
     left: 22px;
     content: "";
     width: 50px;
@@ -29,7 +28,7 @@
 
   &::after {
     position: absolute;
-    top: 20px;
+    top: 23px;
     left: 30px;
     content: "";
     width: 35px;
@@ -40,7 +39,7 @@
 }
 
 .features__item--pro::after {
-  top: 30px;
+  top: 35px;
   left: 13px;
   width: 67px;
   height: 28px;
@@ -49,7 +48,7 @@
 
 .features__box {
   border-bottom: 1px solid rgba($tundora, 0.1);
-  padding-bottom: 23px;
+  padding-bottom: 21px;
   padding-right: 15px;
   margin-bottom: 20px;
 }
@@ -62,7 +61,7 @@
   text-transform: uppercase;
   color: #111111;
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 29px;
   padding-left: 70px;
 }
 
@@ -82,8 +81,8 @@
 
   &::before {
     position: absolute;
-    top: 5px;
-    right: -35px;
+    top: 7px;
+    right: -37px;
     content: "";
     width: 25px;
     height: 12px;
@@ -103,11 +102,15 @@
 }
 
 @media (min-width: $tablet-width) {
+  .features {
+    padding-bottom: 44px;
+  }
+
   .features__item {
-    padding: 81px 0 62px 52px;
+    padding: 73px 0 59px 54px;
 
     &::before {
-      top: 92px;
+      top: 90px;
       left: auto;
       right: 62px;
       width: 200px;
@@ -115,16 +118,20 @@
     }
 
     &::after {
-      top: 80px;
+      top: 78px;
       left: auto;
-      right: 92px;
+      right: 89px;
       width: 141px;
       height: 194px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 33px;
     }
   }
 
   .features__item--pro::after {
-    top: 135px;
+    top: 132px;
     left: auto;
     right: 28px;
     width: 268px;
@@ -133,15 +140,20 @@
 
   .features__box {
     border: none;
-    padding-right: 285px;
+    padding-right: 280px;
     padding-bottom: 0;
-    margin-bottom: 61px;
+    margin-bottom: 56px;
+  }
+
+  .features__item--pro .features__box {
+    padding-right: 310px;
   }
 
   .features__title {
     font-size: 36px;
     line-height: 37px;
     padding: 0;
+    margin-bottom: 26px;
   }
 
   .features__text {
@@ -155,6 +167,7 @@
 
     &::before {
       top: 9px;
+      right: -47px;
     }
   }
 }
