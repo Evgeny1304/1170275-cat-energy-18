@@ -119,14 +119,24 @@
 
 @media (min-width: $desktop-width) {
   .offer {
-    padding-bottom: 320px;
+    padding-top: 103px;
+    padding-bottom: 268px;
+  }
+
+  .offer__wrapper {
+    max-width: 440px;
+    padding-left: 20px;
+  }
+
+  .offer__text {
+    margin-bottom: 51px;
   }
 
   .offer__image {
     bottom: auto;
-    top: 20px;
+    top: 23px;
     width: 552px;
     height: 499px;
-    margin-left: -170px;
+    margin-left: -159px;
   }
 }

@@ -21,7 +21,7 @@
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .extra-products__link {
@@ -33,7 +33,8 @@
   line-height: 20px;
   text-transform: uppercase;
   background-color: $apple;
-  padding: 13px 0;
+  padding-top: 10px;
+  padding-bottom: 11px;
   width: 100%;
   text-align: center;
 
@@ -49,11 +50,15 @@
 }
 
 @media (min-width: $tablet-width) {
+  .extra-products {
+    padding: 0;
+  }
+
   .extra-products__item {
     border-left: 1px solid rgba($tundora, 0.1);
     border-right: 1px solid rgba($tundora, 0.1);
     margin: 0;
-    padding: 28px 37px;
+    padding: 30px 38px 24px;
     display: flex;
     flex-wrap: wrap;
 
@@ -74,10 +79,11 @@
     border-left: none;
     border-right: none;
     padding: 16px 0;
+    align-items: center;
   }
 
   .extra-products__link {
     width: auto;
-    padding: 13px 95px;
+    padding: 10px 95px 11px 95px;
   }
 }

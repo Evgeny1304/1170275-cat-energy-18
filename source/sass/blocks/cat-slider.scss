@@ -137,10 +137,17 @@
 @media (min-width: $desktop-width) {
   .cat-slider {
     flex: 1 0 50%;
+    padding-bottom: 0;
   }
 
   .cat-slider__wrapper {
     width: auto;
     padding: 0;
+  }
+
+  .cat-slider__img {
+    margin-left: 0;
+    margin-top: -260px;
+    margin-bottom: 35px;
   }
 }

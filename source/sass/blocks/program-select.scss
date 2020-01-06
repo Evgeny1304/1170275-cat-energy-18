@@ -1,6 +1,6 @@
 .program-select {
   font-family: "Oswald", "Arial", sans-serif;
-  padding-top: 30px;
+  padding-top: 15px;
   padding-bottom: 34px;
 }
 
@@ -10,12 +10,26 @@
   font-weight: 400;
   color: #111111;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 
 @media (min-width: $tablet-width) {
+  .program-select {
+    padding-top: 53px;
+  }
+
   .program-select__title {
     font-size: 60px;
-    margin-bottom: 53px;
+    margin-bottom: 54px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-select {
+    padding-top: 69px;
+  }
+
+  .program-select__title {
+    margin-bottom: 55px;
   }
 }

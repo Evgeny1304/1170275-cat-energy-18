@@ -113,6 +113,8 @@
 @media (min-width: $desktop-width) {
   .results {
     background-color: #f2f2f2;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
 
   .results__container {
@@ -121,7 +123,8 @@
   }
 
   .results__intro {
-    margin-bottom: 70px;
+    margin-bottom: 68px;
+    padding-right: 95px;
   }
 
   .results__wrapper {
@@ -132,7 +135,7 @@
   }
 
   .results__list {
-    margin-bottom: 48px;
+    margin-bottom: 61px;
   }
 
   .results__box {
@@ -152,7 +155,7 @@
     max-width: 100%;
 
     span {
-      margin-left: 64px;
+      margin-left: 60px;
     }
   }
 }

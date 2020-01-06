@@ -31,11 +31,13 @@
   .demo-effect {
     background-color: #f2f2f2;
     padding-top: 0;
+    padding-bottom: 74px;
   }
 
   .demo-effect__title-wrapper {
     background-color: #ffffff;
-    padding: 33px 0;
+    padding-top: 33px;
+    padding-bottom: 75px;
   }
 
   .demo-effect__title {
@@ -45,7 +47,9 @@
   .demo-effect__wrapper {
     display: flex;
     width: $desktop-width;
-    padding: 0 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 72px;
     margin: 0 auto;
   }
 }

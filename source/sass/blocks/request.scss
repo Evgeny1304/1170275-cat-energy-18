@@ -4,15 +4,20 @@
   font-weight: 400;
   text-transform: uppercase;
   color: #111111;
+  max-width: 226px;
   margin: 0;
-  margin-bottom: 39px;
+  margin-bottom: 38px;
 }
 
 .request__item {
   border: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+}
+
+.request__item--comment {
+  margin-bottom: 28px;
 }
 
 .request__title {
@@ -20,23 +25,7 @@
   line-height: 24px;
   font-weight: 400;
   color: #111111;
-  margin-bottom: 30px;
-  position: relative;
-
-  & span {
-    background-color: #ffffff;
-  }
-
-  &::after {
-    position: absolute;
-    top: 15px;
-    left: -20px;
-    content: "";
-    width: 100vw;
-    height: 3px;
-    background-color: $apple;
-    z-index: -1;
-  }
+  margin-bottom: 33px;
 }
 
 .request__label {
@@ -51,14 +40,15 @@
   margin-bottom: 14px;
 
   span {
-    margin-right: 16px;
+    margin-right: 14px;
   }
 }
 
 .request__field {
   border: 1px solid rgba(#cdcdcd, 0.5);
-  padding-left: 16px;
+  padding-left: 14px;
   padding-right: 10px;
+  padding-top: 6px;
   height: 45px;
   flex-grow: 1;
 
@@ -78,6 +68,10 @@
   &:focus {
     border: 2px solid $tundora;
   }
+}
+
+.request__field--age {
+  width: 170px;
 }
 
 .request__comment {
@@ -107,7 +101,7 @@
   text-transform: uppercase;
   background-color: $apple;
   padding: 13px 77px 11px 77px;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
 
   &:hover,
   &:focus {
@@ -130,43 +124,52 @@
 
 @media (min-width: $tablet-width) {
   .request {
-    padding: 0 36px;
+    padding: 0 40px;
   }
 
   .request__heading {
     font-size: 20px;
     line-height: 30px;
     max-width: 325px;
-    margin-bottom: 69px;
+    margin-bottom: 66px;
   }
 
   .request__title {
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 70px;
-
-    &::after {
-      top: 20px;
-      left: -30px;
-    }
+    margin-bottom: 78px;
   }
 
   .request__item {
-    margin-bottom: 20px;
+    margin-bottom: 43px;
+  }
+
+  .request__item--product .request__title {
+    margin-bottom: 67px;
   }
 
   .request__label {
     font-size: 20px;
     line-height: 20px;
+    margin-bottom: 20px;
   }
 
   .request__field {
     height: 52px;
+    padding-left: 23px;
 
     &::placeholder {
       font-size: 20px;
       line-height: 20px;
     }
+  }
+
+  .request__item--comment {
+    margin-bottom: 58px;
+  }
+
+  .request__comment {
+    min-height: 174px;
   }
 
   .request__comment::placeholder {
@@ -184,7 +187,7 @@
     font-size: 20px;
     padding: 17px 0 15px 0;
     flex-basis: 44.5%;
-    margin-right: 61px;
+    margin-right: 66px;
   }
 
   .request__text {
@@ -195,6 +198,14 @@
 @media (min-width: $desktop-width) {
   .request {
     padding: 0;
+  }
+
+  .request__item {
+    margin-bottom: 50px;
+
+    &--product {
+      margin-bottom: 63px;
+    }
   }
 
   .request__box {
