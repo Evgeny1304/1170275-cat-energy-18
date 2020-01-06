@@ -1,3 +1,7 @@
+.advantages {
+  padding-bottom: 47px;
+}
+
 .advantages__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
@@ -5,7 +9,7 @@
   font-weight: 400;
   color: #111111;
   margin: 0;
-  margin-bottom: 37px;
+  margin-bottom: 30px;
 }
 
 .advantages__list {
@@ -19,7 +23,7 @@
 
   &::before {
     position: absolute;
-    top: 0;
+    top: -2px;
     left: 0;
     content: "";
     width: 60px;
@@ -36,7 +40,7 @@
   }
 
   &:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 26px;
   }
 }
 
@@ -71,6 +75,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .advantages {
+    padding-bottom: 0;
+  }
+
   .advantages__title {
     font-size: 60px;
     line-height: 60px;
@@ -88,19 +96,21 @@
     padding: 0;
     padding-top: 120px;
     padding-bottom: 48px;
+    padding-right: 60px;
     flex: 1 0 36.5%;
     margin-bottom: 89px;
     z-index: 0;
 
     &::before {
+      top: 10px;
       width: 80px;
       height: 80px;
     }
 
     &::after {
       position: absolute;
-      top: 90px;
-      right: 35px;
+      top: 100px;
+      right: 95px;
       content: "1";
       font-family: "Oswald", "Arial", sans-serif;
       font-weight: 400;
@@ -112,34 +122,43 @@
 
     &:not(:last-child) {
       margin: 0;
-      margin-bottom: 89px;
+      margin-bottom: 77px;
     }
 
     &:not(:nth-child(2n)) {
-      margin-right: 180px;
+      margin-right: 60px;
     }
   }
 
   .advantages__item:nth-child(2) {
     &::after {
       content: "2";
+      right: 77px;
     }
   }
 
   .advantages__item:nth-child(3) {
     &::after {
       content: "3";
+      right: 75px;
     }
   }
 
   .advantages__item:nth-child(4) {
+    padding-right: 75px;
+
     &::after {
       content: "4";
+      right: 75px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
+  .advantages {
+    padding-bottom: 45px;
+  }
+
   .advantages__list {
     justify-content: center;
   }
@@ -147,14 +166,43 @@
   .advantages__item {
     flex: 1 0 18%;
     margin: 0;
+    padding-right: 36px;
+
+    &::before {
+      top: 8px;
+    }
 
     &::after {
-      right: 13px;
+      right: 16px;
     }
 
     &:not(:last-child) {
       margin: 0;
-      margin-right: 89px;
+      margin-right: 80px;
+    }
+  }
+
+  .advantages__item:nth-child(2) {
+    padding-right: 15px;
+
+    &::after {
+      right: -1px;
+    }
+  }
+
+  .advantages__item:nth-child(3) {
+    padding-right: 10px;
+
+    &::after {
+      right: -3px;
+    }
+  }
+
+  .advantages__item:nth-child(4) {
+    padding-right: 0;
+
+    &::after {
+      right: -3px;
     }
   }
 }

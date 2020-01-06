@@ -46,7 +46,7 @@
           </label>
           <label class="request__label">
             <span>Возраст (лет):</span>
-            <input type="text" placeholder="7" class="request__field">
+            <input type="text" placeholder="7" class="request__field request__field--age">
           </label>
         </fieldset>
         <fieldset class="request__item">
@@ -67,7 +67,7 @@
         </fieldset>
       </div>
       <fieldset class="request__item">
-        <legend class="request__title">Контактные данные (владельца кота)</legend>
+        <legend class="request__title"><span>Контактные данные (владельца кота)</span></legend>
         <div class="request__box">
           <label class="request__label">
             <span>E-mail:*</span>
@@ -79,12 +79,12 @@
           </label>
         </div>
       </fieldset>
-      <fieldset class="request__item">
-        <legend class="request__title">Комментарий</legend>
-        <textarea name="comment-text" class="request__comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+      <fieldset class="request__item request__item--comment">
+        <legend class="request__title"><span>Комментарий</span></legend>
+        <textarea name="comment-text" class="request__comment" cols="30" rows="8" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
-      <fieldset class="request__item">
-        <legend class="request__title">Дополнительно</legend>
+      <fieldset class="request__item request__item--product">
+        <legend class="request__title"><span>Дополнительно</span></legend>
         <ul class="request__list product-list">
           <li class="product-list__item">
             <input id="prod1" type="checkbox" class="product-list__checkbox visually-hidden" checked>
