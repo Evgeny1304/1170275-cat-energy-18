@@ -27,6 +27,14 @@
   .navigation--closed .menu {
     display: none;
   }
+
+  .navigation--nojs .navigation__toggle {
+    display: none;
+  }
+
+  .navigation--nojs .menu {
+    display: block;
+  }
 }
 
 @media (min-width: $tablet-width) {

@@ -44,6 +44,21 @@
   }
 }
 
+.request__label--contact {
+  position: relative;
+}
+
+.request__icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.request__icon--phone {
+  top: 13px;
+  right: 13px;
+}
+
 .request__field {
   border: 1px solid rgba(#cdcdcd, 0.5);
   padding-left: 14px;
@@ -68,6 +83,18 @@
   &:focus {
     border: 2px solid $tundora;
   }
+}
+
+.request__field:focus ~ .request__icon {
+  fill: $apple;
+}
+
+.request__field--error {
+  border: 2px solid #ff8282;
+}
+
+.request__field--error ~ .request__icon {
+  fill: #ff8282;
 }
 
 .request__field--age {
@@ -162,6 +189,16 @@
       font-size: 20px;
       line-height: 20px;
     }
+  }
+
+  .request__icon {
+    top: 20px;
+    right: 20px;
+  }
+
+  .request__icon--phone {
+    top: 17px;
+    right: 17px;
   }
 
   .request__item--comment {
