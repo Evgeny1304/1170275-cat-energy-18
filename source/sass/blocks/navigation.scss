@@ -15,12 +15,12 @@
 }
 
 .navigation--closed .navigation__toggle {
-  background-image: url("../../img/icon-mobile-menu.svg");
+  background-image: url("../img/icon-mobile-menu.svg");
 }
 
 .navigation--open .navigation__toggle {
   width: 19px;
-  background-image: url("../../img/icon-close.svg");
+  background-image: url("../img/icon-close.svg");
 }
 
 @media (max-width: $mobile-width-only) {
