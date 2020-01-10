@@ -164,7 +164,8 @@
   }
 
   .advantages__item {
-    flex: 1 0 18%;
+    max-width: 245px;
+    flex: auto;
     margin: 0;
     padding-right: 36px;
 

@@ -183,7 +183,7 @@
 
   .features__item {
     margin-bottom: 0;
-    flex: 1 0 46.5%;
+    max-width: 570px;
     padding: 77px 0 59px 54px;
 
     &:not(:last-child) {
@@ -217,7 +217,6 @@
   }
 
   .features__box {
-    max-width: 516px;
     padding-right: 21px;
     margin-bottom: 30px;
   }

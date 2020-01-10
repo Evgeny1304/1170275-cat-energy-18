@@ -6,7 +6,8 @@
   &::before {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50%;
+    margin-left: -140px;
     content: "";
     width: 280px;
     height: 289px;
@@ -46,6 +47,8 @@
     padding: 65px 125px 74px 91px;
 
     &::before {
+      left: 0;
+      margin-left: 0;
       width: 708px;
       height: 200px;
       background-image: url("../img/gift-photo-tablet@1x.jpg");
@@ -69,7 +72,6 @@
 
 @media (min-width: $desktop-width) {
   .special-offer {
-    flex-basis: 20%;
     flex-direction: column;
     justify-content: center;
     padding: 90px 43px 43px 43px;

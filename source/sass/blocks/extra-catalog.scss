@@ -46,7 +46,6 @@
 
     &::after {
       top: 20px;
-      //left: 0;
       right: -30px;
       width: 100vw;
     }
@@ -55,7 +54,6 @@
       position: absolute;
       top: 20px;
       left: -30px;
-      //right: 710px;
       content: "";
       width: 100vw;
       height: 3px;
@@ -68,7 +66,7 @@
 @media (min-width: $desktop-width) {
   .extra-catalog {
     padding: 0;
-    flex-basis: 73.5%;
+    width: 895px;
   }
 
   .extra-catalog__title::after {

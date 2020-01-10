@@ -38,6 +38,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .navigation {
+    margin-left: auto;
+  }
+
   .navigation__toggle {
     display: none;
   }
