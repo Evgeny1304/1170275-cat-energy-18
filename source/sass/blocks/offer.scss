@@ -15,13 +15,13 @@
     width: 320px;
     height: 305px;
     background-color: $apple;
-    background-image: url("../../img/index-background-mobile@1x.jpg");
+    background-image: url("../img/index-background-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-size: 320px auto;
     z-index: -1;
 
     @media (min-resolution: $retina-dppx) {
-      background-image: url("../../img/index-background-mobile@2x.jpg");
+      background-image: url("../img/index-background-mobile@2x.jpg");
     }
   }
 }
@@ -124,7 +124,7 @@
   }
 
   .offer__wrapper {
-    max-width: 440px;
+    max-width: 441px;
     padding-left: 20px;
   }
 

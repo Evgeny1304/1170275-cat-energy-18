@@ -11,13 +11,13 @@
     width: 280px;
     height: 289px;
     background-color: $apple;
-    background-image: url("../../img/gift-photo-mobile@1x.jpg");
+    background-image: url("../img/gift-photo-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-size: 280px auto;
     z-index: -1;
 
     @media (min-resolution: $retina-dppx) {
-      background-image: url("../../img/gift-photo-mobile@2x.jpg");
+      background-image: url("../img/gift-photo-mobile@2x.jpg");
     }
   }
 }
@@ -48,11 +48,11 @@
     &::before {
       width: 708px;
       height: 200px;
-      background-image: url("../../img/gift-photo-tablet@1x.jpg");
+      background-image: url("../img/gift-photo-tablet@1x.jpg");
       background-size: 708px auto;
 
       @media (min-resolution: $retina-dppx) {
-        background-image: url("../../img/gift-photo-tablet@2x.jpg");
+        background-image: url("../img/gift-photo-tablet@2x.jpg");
       }
     }
   }
@@ -79,11 +79,11 @@
       top: 50px;
       width: 245px;
       height: 289px;
-      background-image: url("../../img/gift-photo-desktop@1x.jpg");
+      background-image: url("../img/gift-photo-desktop@1x.jpg");
       background-size: 245px auto;
 
       @media (min-resolution: $retina-dppx) {
-        background-image: url("../../img/gift-photo-desktop@2x.jpg");
+        background-image: url("../img/gift-photo-desktop@2x.jpg");
       }
     }
   }

@@ -33,7 +33,7 @@
     content: "";
     width: 35px;
     height: 49px;
-    background-image: url("../../img/icon-cat-slim.svg");
+    background-image: url("../img/icon-cat-slim.svg");
     background-repeat: no-repeat;
   }
 }
@@ -43,7 +43,7 @@
   left: 13px;
   width: 67px;
   height: 28px;
-  background-image: url("../../img/icon-cat-pro.svg");
+  background-image: url("../img/icon-cat-pro.svg");
 }
 
 .features__box {
@@ -86,14 +86,14 @@
     content: "";
     width: 25px;
     height: 12px;
-    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
   }
 
   &:hover::before {
     right: -40px;
     width: 34px;
-    background-image: url("../../img/icon-right-arrow-verylong.svg");
+    background-image: url("../img/icon-right-arrow-verylong.svg");
   }
 
   &:active {
@@ -217,6 +217,7 @@
   }
 
   .features__box {
+    max-width: 516px;
     padding-right: 21px;
     margin-bottom: 30px;
   }
