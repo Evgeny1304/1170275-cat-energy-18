@@ -8,19 +8,21 @@
 .develop__text {
   font-size: 16px;
   line-height: 16px;
-  margin: 0;
+  color: $tundora;
 }
 
 .develop__logo {
   fill: #666666;
+  width: 41px;
+  height: 51px;
 }
 
-.develop__link:hover .develop__logo,
-.develop__link:focus .develop__logo {
+.develop:hover .develop__logo,
+.develop:focus .develop__logo {
   fill: $apple;
 }
 
-.develop__link:active .develop__logo {
+.develop:active {
   opacity: 0.3;
 }
 

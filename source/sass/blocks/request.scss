@@ -79,19 +79,22 @@
 
 .request__field {
   border: 1px solid rgba(#cdcdcd, 0.5);
-  padding-left: 14px;
-  padding-right: 10px;
-  padding-top: 6px;
+  padding: 14px;
   height: 45px;
   flex-grow: 1;
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $tundora;
+  outline: none;
 
   &::placeholder {
-    font-family: "Oswald", "Arial", sans-serif;
     font-size: 16px;
     line-height: 18px;
-    font-weight: 400;
     text-transform: uppercase;
     color: $tundora;
+    opacity: 1;
   }
 
   &:hover {
@@ -99,7 +102,8 @@
   }
 
   &:focus {
-    border: 2px solid $tundora;
+    border: 1px solid $tundora;
+    box-shadow: 0 0 0 1px $tundora;
   }
 }
 
@@ -108,7 +112,8 @@
 }
 
 .request__field--error {
-  border: 2px solid #ff8282;
+  border: 1px solid #ff8282;
+  box-shadow: 0 0 0 1px #ff8282;
 }
 
 .request__field--error ~ .request__icon {
@@ -124,14 +129,28 @@
   border: 1px solid rgba(#cdcdcd, 0.5);
   padding: 15px;
   width: 100%;
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $tundora;
+  outline: none;
 
   &::placeholder {
-    font-family: "Oswald", "Arial", sans-serif;
     font-size: 16px;
     line-height: 18px;
-    font-weight: 400;
     text-transform: uppercase;
     color: $tundora;
+    opacity: 1;
+  }
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    border: 1px solid $tundora;
+    box-shadow: 0 0 0 1px $tundora;
   }
 }
 
@@ -186,6 +205,7 @@
 
     span {
       padding: 0 38px;
+      margin-left: -45px;
     }
 
     &::after {
@@ -223,6 +243,8 @@
   .request__field {
     height: 52px;
     padding-left: 23px;
+    font-size: 20px;
+    line-height: 20px;
 
     &::placeholder {
       font-size: 20px;
@@ -246,11 +268,13 @@
 
   .request__comment {
     min-height: 174px;
-  }
-
-  .request__comment::placeholder {
     font-size: 20px;
     line-height: 20px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 20px;
+    }
   }
 
   .request__wrap {

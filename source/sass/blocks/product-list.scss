@@ -5,7 +5,7 @@
 }
 
 .product-list__item:not(:last-child) {
-  margin-bottom: 13px;
+  margin-bottom: 25px;
 }
 
 .product-list__label {
@@ -19,7 +19,6 @@
   user-select: none;
   position: relative;
   padding-left: 46px;
-  padding-bottom: 12px;
 }
 
 .product-list__checkbox + .product-list__label::before {
@@ -49,7 +48,7 @@
 }
 
 .product-list__checkbox:focus + .product-list__label::before {
-  box-shadow: 0 0 5px 5px #a6c7fe;
+  box-shadow: 0 0 0 2px #a6c7fe;
 }
 
 .product-list__checkbox:active + .product-list__label {
@@ -88,12 +87,12 @@
   }
 
   .product-list__checkbox + .product-list__label::before {
+    top: -10px;
     width: 40px;
     height: 40px;
   }
 
   .product-list__checkbox:checked + .product-list__label::after {
-    top: 6px;
     left: 11px;
   }
 }
