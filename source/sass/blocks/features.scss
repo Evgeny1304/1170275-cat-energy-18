@@ -107,7 +107,7 @@
   }
 
   .features__item {
-    padding: 73px 0 59px 54px;
+    padding: 73px 0 59px 53px;
 
     &::before {
       top: 90px;
@@ -184,7 +184,7 @@
   .features__item {
     margin-bottom: 0;
     max-width: 570px;
-    padding: 77px 0 59px 54px;
+    padding: 77px 0 59px 53px;
 
     &:not(:last-child) {
       margin-right: 80px;
@@ -217,16 +217,16 @@
   }
 
   .features__box {
-    padding-right: 21px;
+    padding-right: 23px;
     margin-bottom: 30px;
   }
 
   .features__item--pro .features__box {
-    padding-right: 21px;
+    padding-right: 23px;
   }
 
   .features__title {
     padding-left: 160px;
-    margin-bottom: 75px;
+    margin-bottom: 74px;
   }
 }

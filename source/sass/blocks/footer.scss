@@ -1,16 +1,16 @@
 .footer {
   background-color: $concrete;
-  padding-bottom: 22px;
+  padding-bottom: 14px;
 }
 
 .footer__wrapper {
-  padding-top: 39px;
+  padding-top: 40px;
 }
 
 .footer__logo {
   display: block;
   text-align: center;
-  margin-bottom: 23px;
+  margin-bottom: 29px;
 }
 
 .footer__logo:hover,
@@ -23,15 +23,25 @@
 }
 
 @media (min-width: $tablet-width) {
+  .footer {
+    padding-bottom: 0;
+  }
+
   .footer__wrapper {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding-top: 78px;
-    padding-bottom: 60px;
+    padding-top: 53px;
+    padding-bottom: 47px;
   }
 
   .footer__logo {
-    margin: 0;
+    margin-bottom: 0;
+    margin-right: 157px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer__logo {
+    margin-right: 412px;
   }
 }

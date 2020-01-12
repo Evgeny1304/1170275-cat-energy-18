@@ -1,5 +1,5 @@
 .contact {
-  padding-bottom: 400px;
+  padding-bottom: 360px;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -28,8 +28,8 @@
 .contact__invite {
   display: flex;
   justify-content: space-between;
-  padding-top: 25px;
-  padding-bottom: 18px;
+  padding-top: 27px;
+  padding-bottom: 25px;
   background-color: $white;
   margin-left: -20px;
   margin-right: -20px;
@@ -60,6 +60,7 @@
 
 @media (min-width: $tablet-width) {
   .contact {
+    padding-bottom: 395px;
     background-image: url("../img/bg-map-tablet@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -80,10 +81,11 @@
 
   .contact__invite {
     padding-left: 72px;
-    padding-bottom: 59px;
+    padding-bottom: 58px;
+    padding-right: 71px;
+    padding-top: 62px;
     margin-right: -30px;
     margin-left: -30px;
-    padding-right: 30px;
   }
 
   .contact__address {
@@ -91,11 +93,17 @@
     line-height: 20px;
     text-align: right;
     max-width: 157px;
+
+    span {
+      display: block;
+      padding-bottom: 19px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .contact {
+    padding-bottom: 400px;
     background-image: url("../img/bg-map-desktop@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -111,15 +119,25 @@
   .contact__invite {
     background-color: $white;
     position: absolute;
-    top: 135px;
+    top: 98px;
     max-width: 570px;
     padding-left: 76px;
     padding-right: 90px;
     margin-right: 0;
     margin-left: 0;
+    justify-content: initial;
   }
 
   .contact__invite--pages {
     background-color: $white;
+  }
+
+  .contact__title {
+    margin-right: 92px;
+    max-width: 160px;
+  }
+
+  .contact__address {
+    text-align: left;
   }
 }

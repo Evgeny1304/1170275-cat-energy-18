@@ -5,12 +5,18 @@
   align-items: center;
   border-top: 1px solid rgba($tundora, 0.1);
   border-bottom: 1px solid rgba($tundora, 0.1);
-  padding-top: 26px;
-  padding-bottom: 24px;
+  padding-top: 23px;
+  padding-bottom: 18px;
 }
 
-.social__item:not(:last-child) {
-  margin-right: 35px;
+.social__item {
+  &:not(:last-child) {
+    margin-right: 36px;
+  }
+
+  &:nth-child(2) {
+    margin-right: 40px;
+  }
 }
 
 .social__icon {
@@ -41,11 +47,16 @@
     &:nth-child(2) .social__icon {
       width: 23px;
       height: 23px;
+      margin-right: 0;
     }
 
     &:nth-child(3) .social__icon {
       width: 14px;
       height: 28px;
+    }
+
+    &:not(:last-child) {
+      margin-right: 28px;
     }
   }
 }
