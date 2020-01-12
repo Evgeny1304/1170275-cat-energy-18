@@ -32,7 +32,7 @@
 
 @media (min-width: $tablet-width) {
   .extra-catalog {
-    padding-bottom: 35px;
+    padding-bottom: 78px;
   }
 
   .extra-catalog__title {
@@ -65,12 +65,16 @@
 
 @media (min-width: $desktop-width) {
   .extra-catalog {
-    padding-bottom: 86px;
+    padding-bottom: 82px;
   }
 
   .extra-catalog__wrapper {
     display: flex;
     justify-content: space-between;
+  }
+
+  .extra-catalog__title span {
+    margin-left: -38px;
   }
 
   .extra-catalog__title::after {

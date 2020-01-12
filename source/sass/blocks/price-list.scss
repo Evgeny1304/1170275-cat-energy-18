@@ -19,6 +19,14 @@
   .price-list__item {
     font-size: 16px;
     line-height: 20px;
+
+    &:nth-child(1) {
+      margin-right: 52px;
+    }
+
+    &:nth-child(2) {
+      margin-left: 0;
+    }
   }
 }
 
@@ -26,5 +34,14 @@
   .price-list {
     margin-bottom: 0;
     margin-right: 39px;
+  }
+
+  .price-list__item:nth-child(1) {
+    margin-right: 115px;
+  }
+
+  .extra-products__item:nth-child(2) .price-list__item:nth-child(1),
+  .extra-products__item:nth-child(3) .price-list__item:nth-child(1) {
+    margin-right: 182px;
   }
 }

@@ -1,7 +1,7 @@
 .product-list {
   @include list-transform;
   margin-top: 5px;
-  margin-bottom: 17px;
+  margin-bottom: 27px;
 }
 
 .product-list__item:not(:last-child) {
@@ -62,13 +62,13 @@
     justify-content: space-between;
     padding-right: 101px;
     margin-top: 0;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
   }
 
   .product-list__item {
     &:nth-child(1),
     &:nth-child(2) {
-      margin-bottom: 39px;
+      margin-bottom: 50px;
     }
 
     &:nth-child(3) {
@@ -100,18 +100,24 @@
 @media (min-width: $desktop-width) {
   .product-list {
     margin-bottom: 0;
+    justify-content: initial;
   }
 
   .product-list__item {
     margin-bottom: 0;
 
-    &:nth-child(1),
+    &:nth-child(1) {
+      margin-right: 103px;
+    }
+
     &:nth-child(2) {
       margin-bottom: 0;
+      margin-right: 137px;
     }
 
     &:nth-child(4) {
       padding-right: 0;
+      margin-left: auto;
     }
   }
 }

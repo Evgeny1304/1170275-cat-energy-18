@@ -3,7 +3,7 @@
   border-top: 1px solid $gallery;
   border-bottom: 1px solid $gallery;
   padding-top: 26px;
-  padding-bottom: 16px;
+  padding-bottom: 26px;
   margin-bottom: 18px;
 }
 
@@ -62,12 +62,12 @@
 @media (min-width: $tablet-width) {
   .program {
     border: 1px solid $gallery;
-    padding: 42px 28px 22px;
-    margin-bottom: 32px;
+    padding: 35px 27px 33px;
+    margin-bottom: 27px;
   }
 
   .program__item:not(:last-child) {
-    margin-bottom: 35px;
+    margin-bottom: 33px;
   }
 
   .program__label {
@@ -92,7 +92,6 @@
 
 @media (min-width: $desktop-width) {
   .program {
-    padding: 34px 26px 22px;
     margin-bottom: 0;
   }
 }

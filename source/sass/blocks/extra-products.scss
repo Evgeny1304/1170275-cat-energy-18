@@ -2,7 +2,7 @@
   @include list-transform;
   border-top: 1px solid rgba($tundora, 0.1);
   padding-top: 14px;
-  padding-bottom: 14px;
+  padding-bottom: 38px;
 }
 
 .extra-products__item {
@@ -52,13 +52,14 @@
 @media (min-width: $tablet-width) {
   .extra-products {
     padding: 0;
+    margin-bottom: 70px;
   }
 
   .extra-products__item {
     border-left: 1px solid rgba($tundora, 0.1);
     border-right: 1px solid rgba($tundora, 0.1);
     margin: 0;
-    padding: 30px 38px 24px;
+    padding: 29px 38px 26px;
     display: flex;
     flex-wrap: wrap;
 
@@ -75,6 +76,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .extra-products {
+    margin-bottom: 0;
+    width: 895px;
+  }
+
   .extra-products__item {
     border-left: none;
     border-right: none;
