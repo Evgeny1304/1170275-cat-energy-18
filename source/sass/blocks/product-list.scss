@@ -13,7 +13,7 @@
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #222222;
+  color: $mine-shaft;
   display: block;
   cursor: pointer;
   user-select: none;
@@ -28,7 +28,7 @@
   content: "";
   width: 30px;
   height: 30px;
-  border: solid 1px #cdcdcd;
+  border: solid 1px $silver;
 }
 
 .product-list__checkbox:checked + .product-list__label::after {
@@ -44,11 +44,11 @@
 
 .product-list__checkbox:hover + .product-list__label::before,
 .product-list__checkbox:focus + .product-list__label::before {
-  border: solid 1px #bababa;
+  border: solid 1px $dark-silver;
 }
 
 .product-list__checkbox:focus + .product-list__label::before {
-  box-shadow: 0 0 0 2px #a6c7fe;
+  box-shadow: 0 0 0 2px $anakiwa;
 }
 
 .product-list__checkbox:active + .product-list__label {

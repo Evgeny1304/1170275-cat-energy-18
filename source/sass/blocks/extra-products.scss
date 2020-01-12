@@ -28,7 +28,7 @@
   @include element-block;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
-  color: #ffffff;
+  color: $white;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -40,12 +40,12 @@
 
   &:hover,
   &:focus {
-    background-color: #5eaa2f;
+    background-color: $apple-hover;
   }
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
-    background-color: #5eaa2f;
+    background-color: $apple-hover;
   }
 }
 

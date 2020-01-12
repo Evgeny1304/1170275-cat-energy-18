@@ -1,6 +1,6 @@
 .offer {
   font-family: "Oswald", "Arial", sans-serif;
-  color: #ffffff;
+  color: $white;
   text-align: center;
   padding-top: 27px;
   padding-bottom: 22px;
@@ -14,7 +14,7 @@
     content: "";
     width: 100%;
     height: 305px;
-    background-color: #63a73a;
+    background-color: $dark-apple;
     background-image: url("../img/index-background-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -54,12 +54,12 @@
 
   &:hover,
   &:focus {
-    background-color: #5eaa2f;
+    background-color: $apple-hover;
   }
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
-    background-color: #5eaa2f;
+    background-color: $apple-hover;
   }
 }
 
@@ -91,14 +91,14 @@
   .offer__title {
     font-size: 60px;
     line-height: 60px;
-    color: #111111;
+    color: $cod-gray;
     margin-bottom: 42px;
   }
 
   .offer__text {
     font-size: 20px;
     line-height: 20px;
-    color: #111111;
+    color: $cod-gray;
     margin-bottom: 46px;
   }
 

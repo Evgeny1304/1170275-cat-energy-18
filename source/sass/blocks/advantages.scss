@@ -7,7 +7,7 @@
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
-  color: #111111;
+  color: $cod-gray;
   margin: 0;
   margin-bottom: 30px;
 }
@@ -114,7 +114,7 @@
       content: "1";
       font-family: "Oswald", "Arial", sans-serif;
       font-weight: 400;
-      color: #f2f2f2;
+      color: $concrete;
       font-size: 281px;
       height: 281px;
       z-index: -1;

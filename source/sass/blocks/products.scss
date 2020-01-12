@@ -26,7 +26,7 @@
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #111111;
+  color: $cod-gray;
   margin: 0;
   margin-bottom: 13px;
   padding-right: 45px;
@@ -36,7 +36,7 @@
   @include element-block;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
-  color: #ffffff;
+  color: $white;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -48,12 +48,12 @@
 
   &:hover,
   &:focus {
-    background-color: #5eaa2f;
+    background-color: $apple-hover;
   }
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
-    background-color: #5eaa2f;
+    background-color: $apple-hover;
   }
 }
 
@@ -88,20 +88,19 @@
 }
 
 .products__link--btn {
-  border: none;
-  cursor: pointer;
+  @include btn;
   color: $tundora;
-  background-color: #f2f2f2;
+  background-color: $concrete;
   padding-left: 0;
   padding-right: 0;
 
   &:hover,
   &:focus {
-    background-color: #ebebeb;
+    background-color: $gallery-hover;
   }
 
   &:active {
-    background-color: #ebebeb;
+    background-color: $gallery-hover;
     color: rgba($tundora, 0.3);
   }
 }
@@ -116,7 +115,7 @@
 
   .products__item {
     border: none;
-    background: linear-gradient(180deg, #ffffff 10%, #f2f2f2 10%);
+    background: linear-gradient(180deg, $white 10%, $concrete 10%);
     width: 324px;
     margin-bottom: 93px;
     padding: 0 37px 37px 37px;
@@ -180,7 +179,7 @@
 
   .products__content {
     width: auto;
-    border: 1px solid #cdcdcd;
+    border: 1px solid $silver;
     padding: 55px 37px 40px 37px;
   }
 

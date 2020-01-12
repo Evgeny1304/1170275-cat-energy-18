@@ -3,7 +3,7 @@
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #111111;
+  color: $cod-gray;
   max-width: 226px;
   margin: 0;
   margin-bottom: 38px;
@@ -24,13 +24,13 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
-  color: #111111;
+  color: $cod-gray;
   margin-bottom: 33px;
   z-index: 0;
   position: relative;
 
   span {
-    background-color: #ffffff;
+    background-color: $white;
     padding-right: 20px;
   }
 
@@ -54,7 +54,7 @@
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #222222;
+  color: $mine-shaft;
   margin-bottom: 14px;
 
   span {
@@ -78,7 +78,7 @@
 }
 
 .request__field {
-  border: 1px solid rgba(#cdcdcd, 0.5);
+  border: 1px solid rgba($silver, 0.5);
   padding: 14px;
   height: 45px;
   flex-grow: 1;
@@ -98,7 +98,7 @@
   }
 
   &:hover {
-    border: 1px solid #cdcdcd;
+    border: 1px solid $silver;
   }
 
   &:focus {
@@ -112,12 +112,12 @@
 }
 
 .request__field--error {
-  border: 1px solid #ff8282;
-  box-shadow: 0 0 0 1px #ff8282;
+  border: 1px solid $vivid-tangerine;
+  box-shadow: 0 0 0 1px $vivid-tangerine;
 }
 
 .request__field--error ~ .request__icon {
-  fill: #ff8282;
+  fill: $vivid-tangerine;
 }
 
 .request__field--age {
@@ -126,7 +126,7 @@
 
 .request__comment {
   resize: none;
-  border: 1px solid rgba(#cdcdcd, 0.5);
+  border: 1px solid rgba($silver, 0.5);
   padding: 15px;
   width: 100%;
   font: inherit;
@@ -145,7 +145,7 @@
   }
 
   &:hover {
-    border: 1px solid #cdcdcd;
+    border: 1px solid $silver;
   }
 
   &:focus {
@@ -155,11 +155,10 @@
 }
 
 .request__btn {
-  border: none;
-  cursor: pointer;
+  @include btn;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
-  color: #ffffff;
+  color: $white;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -169,12 +168,12 @@
 
   &:hover,
   &:focus {
-    background-color: #5eaa2f;
+    background-color: $apple-hover;
   }
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
-    background-color: #5eaa2f;
+    background-color: $apple-hover;
   }
 }
 

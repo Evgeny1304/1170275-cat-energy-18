@@ -4,13 +4,12 @@
 }
 
 .cat-slider__btn {
+  @include btn;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
-  color: #111111;
+  color: $cod-gray;
   text-transform: uppercase;
-  cursor: pointer;
-  border: none;
   background-color: transparent;
   padding: 0;
 }
@@ -33,8 +32,8 @@
   width: 84px;
   height: 14px;
   border-radius: 6px;
-  border: solid 1px #cdcdcd;
-  background-color: #ffffff;
+  border: solid 1px $silver;
+  background-color: $white;
   position: relative;
 }
 
@@ -54,7 +53,7 @@
 
 @media (min-width: $tablet-width) {
   .cat-slider {
-    background-color: #f2f2f2;
+    background-color: $concrete;
     padding-bottom: 74px;
   }
 
@@ -71,7 +70,7 @@
     height: 6px;
     border-radius: 2.5px;
     border: none;
-    background-color: #dcdcdc;
+    background-color: $alto;
   }
 
   .cat-slider__bar {
@@ -88,9 +87,9 @@
     width: 34px;
     height: 34px;
     border-radius: 50%;
-    box-shadow: 0 2px 5px 0 rgba(#000000, 0.15);
-    border: solid 1px #cdcdcd;
-    background-color: #ffffff;
+    box-shadow: 0 2px 5px 0 rgba($black, 0.15);
+    border: solid 1px $silver;
+    background-color: $white;
 
     &::before {
       position: absolute;
@@ -105,11 +104,11 @@
 
     &:hover,
     &:focus {
-      box-shadow: 0 3px 5px 0 rgba(#000000, 0.25);
+      box-shadow: 0 3px 5px 0 rgba($black, 0.25);
     }
 
     &:active {
-      box-shadow: 0 4px 5px 0 rgba(#000000, 0.3);
+      box-shadow: 0 4px 5px 0 rgba($black, 0.3);
       border: 2px solid $apple;
 
       &::before {

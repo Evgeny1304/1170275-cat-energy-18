@@ -1,5 +1,5 @@
 .demo-effect {
-  background-color: #f2f2f2;
+  background-color: $concrete;
   padding-top: 16px;
   padding-bottom: 38px;
 }
@@ -9,14 +9,14 @@
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
-  color: #111111;
+  color: $cod-gray;
   margin: 0;
   margin-bottom: 23px;
 }
 
 @media (min-width: $tablet-width) {
   .demo-effect {
-    background-color: #ffffff;
+    background-color: $white;
     padding-top: 10px;
   }
 
@@ -29,13 +29,13 @@
 
 @media (min-width: $desktop-width) {
   .demo-effect {
-    background-color: #f2f2f2;
+    background-color: $concrete;
     padding-top: 0;
     padding-bottom: 74px;
   }
 
   .demo-effect__title-wrapper {
-    background-color: #ffffff;
+    background-color: $white;
     padding-top: 33px;
     padding-bottom: 75px;
   }

@@ -1,6 +1,6 @@
 .extra-catalog {
   padding-top: 28px;
-  padding-bottom: 26px;
+  padding-bottom: 35px;
 }
 
 .extra-catalog__title {
@@ -8,13 +8,13 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  color: #111111;
+  color: $cod-gray;
   margin: 0;
   margin-bottom: 34px;
   position: relative;
 
   & span {
-    background-color: #ffffff;
+    background-color: $white;
     padding-right: 20px;
   }
 
@@ -32,7 +32,7 @@
 
 @media (min-width: $tablet-width) {
   .extra-catalog {
-    padding-bottom: 73px;
+    padding-bottom: 35px;
   }
 
   .extra-catalog__title {
@@ -65,8 +65,12 @@
 
 @media (min-width: $desktop-width) {
   .extra-catalog {
-    padding: 0;
-    width: 895px;
+    padding-bottom: 86px;
+  }
+
+  .extra-catalog__wrapper {
+    display: flex;
+    justify-content: space-between;
   }
 
   .extra-catalog__title::after {

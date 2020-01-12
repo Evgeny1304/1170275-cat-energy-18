@@ -1,13 +1,16 @@
+.contact {
+  background-color: $white;
+}
+
+.contact--pages {
+  background-color: $concrete;
+}
+
 .contact__wrapper {
   display: flex;
   justify-content: space-between;
   padding-top: 25px;
   padding-bottom: 18px;
-  background-color: #ffffff;
-}
-
-.contact__wrapper--pages {
-  background-color: #f2f2f2;
 }
 
 .contact__title {
@@ -15,7 +18,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #111111;
+  color: $cod-gray;
   text-transform: uppercase;
   margin: 0;
   max-width: 154px;
@@ -28,7 +31,31 @@
 }
 
 .contact__map {
-  display: block;
+  padding-bottom: 400px;
+  background-color: $concrete;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+  }
+
+  &::before {
+    position: absolute;
+    top: 170px;
+    left: 50%;
+    margin-left: -27px;
+    content: "";
+    width: 55px;
+    height: 53px;
+    background-image: url("../img/map-pin.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -50,20 +77,27 @@
   }
 
   .contact__map {
-    width: 767px;
+    background-image: url("../img/bg-map-tablet@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+    }
+
+    &::before {
+      width: 113px;
+      height: 106px;
+      margin-left: -56px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .contact__map {
-    width: 100%;
-  }
-
   .contact {
     position: relative;
   }
 
   .contact__wrapper {
+    background-color: $white;
     position: absolute;
     top: 135px;
     left: 40px;
@@ -72,7 +106,17 @@
     padding-right: 90px;
   }
 
-  .contact__wrapper--pages {
-    background-color: #ffffff;
+  .contact__map {
+    position: static;
+    background-image: url("../img/bg-map-desktop@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+    }
+
+    &::before {
+      top: 150px;
+      left: 75%;
+    }
   }
 }

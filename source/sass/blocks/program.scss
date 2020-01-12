@@ -1,7 +1,7 @@
 .program {
   @include list-transform;
-  border-top: 1px solid #ededed;
-  border-bottom: 1px solid #ededed;
+  border-top: 1px solid $gallery;
+  border-bottom: 1px solid $gallery;
   padding-top: 26px;
   padding-bottom: 16px;
   margin-bottom: 18px;
@@ -16,7 +16,7 @@
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #222222;
+  color: $mine-shaft;
   padding-left: 46px;
   display: block;
   cursor: pointer;
@@ -32,7 +32,7 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  border: solid 1px #cdcdcd;
+  border: solid 1px $silver;
 }
 
 .program__radio:checked + .program__label::after {
@@ -48,11 +48,11 @@
 
 .program__radio:hover + .program__label::before,
 .program__radio:focus + .program__label::before {
-  border: solid 1px #bababa;
+  border: solid 1px $dark-silver;
 }
 
 .program__radio:focus + .program__label::before {
-  box-shadow: 0 0 0 2px #a6c7fe;
+  box-shadow: 0 0 0 2px $anakiwa;
 }
 
 .program__radio:active + .program__label {
@@ -61,7 +61,7 @@
 
 @media (min-width: $tablet-width) {
   .program {
-    border: 1px solid #ededed;
+    border: 1px solid $gallery;
     padding: 42px 28px 22px;
     margin-bottom: 32px;
   }
