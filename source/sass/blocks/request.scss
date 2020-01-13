@@ -146,6 +146,7 @@
   text-transform: uppercase;
   color: $tundora;
   outline: none;
+  overflow: auto;
 
   &::placeholder {
     font-size: 16px;

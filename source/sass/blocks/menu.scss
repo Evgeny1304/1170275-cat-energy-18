@@ -25,10 +25,18 @@
     border: none;
     margin-right: 0;
     margin-left: 0;
+    flex-wrap: wrap;
+    max-width: 485px;
   }
 
-  .menu__item:not(:last-child) {
-    margin-right: 35px;
+  .menu__item {
+    &:not(:last-child) {
+      margin-right: 35px;
+    }
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
   }
 
   .menu__link {

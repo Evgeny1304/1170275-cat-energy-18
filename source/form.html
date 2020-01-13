@@ -22,7 +22,7 @@
     </picture>
   </a>
   <nav class="header__navigation navigation navigation--closed navigation--nojs">
-    <button type="button" class="navigation__toggle">
+    <button type="button" class="navigation__toggle" aria-label="Кнопка открытия/закрытия меню">
 
     </button>
     <ul class="navigation__menu menu">
@@ -39,6 +39,7 @@
       <h2 class="request__heading">Заполните анкету и мы подберем программу питания для вашего кота</h2>
       <div class="request__box">
         <fieldset class="request__item">
+          <legend class="request__title visually-hidden"><span>Информация о коте</span></legend>
           <label class="request__label">
             <span>Имя:*</span>
             <input type="text" placeholder="Барсик" class="request__field">
@@ -53,6 +54,7 @@
           </label>
         </fieldset>
         <fieldset class="request__item">
+          <legend class="request__title visually-hidden"><span>Выбор программы</span></legend>
           <ul class="request__list program">
             <li class="program__item">
               <input id="prog1" type="radio" name="prog-group" class="program__radio visually-hidden" checked>
@@ -86,7 +88,7 @@
       </fieldset>
       <fieldset class="request__item request__item--comment">
         <legend class="request__title"><span>Комментарий</span></legend>
-        <textarea name="comment-text" class="request__comment" cols="30" rows="8" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <textarea name="comment-text" class="request__comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
       <fieldset class="request__item request__item--product">
         <legend class="request__title"><span>Дополнительно</span></legend>
@@ -131,17 +133,17 @@
     </a>
     <ul class="footer__social social">
       <li class="social__item">
-        <a href="https://vk.com" class="social__link">
+        <a href="https://vk.com" class="social__link" aria-label="Кэт энерджи в Вконтакте">
           <svg class="social__icon" width="22" height="12"><use xlink:href="#icon-vk"></use></svg>
         </a>
       </li>
       <li class="social__item">
-        <a href="https://instagram.com" class="social__link">
+        <a href="https://instagram.com" class="social__link" aria-label="Кэт энерджи в Instagram">
           <svg class="social__icon" width="16" height="16"><use xlink:href="#icon-insta"></use></svg>
         </a>
       </li>
       <li class="social__item">
-        <a href="https://facebook.com" class="social__link">
+        <a href="https://facebook.com" class="social__link" aria-label="Кэт энерджи в Facebook">
           <svg class="social__icon" width="10" height="19"><use xlink:href="#icon-fb"></use></svg>
         </a>
       </li>

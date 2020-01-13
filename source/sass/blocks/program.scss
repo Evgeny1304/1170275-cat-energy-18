@@ -2,9 +2,10 @@
   @include list-transform;
   border-top: 1px solid $gallery;
   border-bottom: 1px solid $gallery;
-  padding-top: 26px;
-  padding-bottom: 26px;
+  padding: 26px 20px;
   margin-bottom: 18px;
+  margin-right: -20px;
+  margin-left: -20px;
 }
 
 .program__item:not(:last-child) {
@@ -64,6 +65,8 @@
     border: 1px solid $gallery;
     padding: 35px 27px 33px;
     margin-bottom: 27px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .program__item:not(:last-child) {
