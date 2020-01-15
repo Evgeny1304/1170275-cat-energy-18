@@ -1,5 +1,5 @@
 .contact {
-  padding-bottom: 360px;
+  padding-bottom: 400px;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -12,7 +12,7 @@
 
   &::before {
     position: absolute;
-    top: 240px;
+    top: 260px;
     left: 50%;
     margin-left: -27px;
     content: "";
@@ -22,6 +22,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    z-index: 1;
   }
 }
 
@@ -35,6 +36,7 @@
   margin-right: -20px;
   padding-left: 20px;
   padding-right: 20px;
+  z-index: 1;
 }
 
 .contact__invite--pages {
@@ -58,9 +60,15 @@
   max-width: 154px;
 }
 
+.contact__map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
 @media (min-width: $tablet-width) {
   .contact {
-    padding-bottom: 395px;
     background-image: url("../img/bg-map-tablet@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -68,6 +76,7 @@
     }
 
     &::before {
+      top: 295px;
       width: 113px;
       height: 106px;
       margin-left: -56px;
@@ -103,7 +112,6 @@
 
 @media (min-width: $desktop-width) {
   .contact {
-    padding-bottom: 400px;
     background-image: url("../img/bg-map-desktop@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -111,8 +119,7 @@
     }
 
     &::before {
-      top: 150px;
-      left: 75%;
+      top: 98px;
     }
   }
 
