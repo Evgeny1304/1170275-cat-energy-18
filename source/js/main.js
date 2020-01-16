@@ -1,7 +1,9 @@
 var nav = document.querySelector('.navigation');
 var navToggle = document.querySelector('.navigation__toggle');
+var map = document.querySelector('.contact__map');
 
 nav.classList.remove('navigation--nojs');
+map.classList.remove('contact__map--nojs');
 
 navToggle.addEventListener('click', function () {
   if (nav.classList.contains('navigation--closed')){
