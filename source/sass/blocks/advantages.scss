@@ -156,7 +156,7 @@
 
 @media (min-width: $desktop-width) {
   .advantages {
-    padding-bottom: 45px;
+    padding-bottom: 80px;
   }
 
   .advantages__list {
@@ -165,7 +165,7 @@
 
   .advantages__item {
     max-width: 245px;
-    flex: auto;
+    //flex: auto;
     margin: 0;
     padding-right: 36px;
 

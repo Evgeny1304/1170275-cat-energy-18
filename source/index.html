@@ -6,7 +6,7 @@
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.min.css">
   <script>
-    document.createElement( "picture" );
+    document.createElement("picture");
   </script>
 </head>
 <body>
@@ -40,12 +40,15 @@
       <a href="form.html" class="offer__link">Подобрать программу</a>
     </div>
     <picture>
-      <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
-      <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
+      <source type="image/webp" media="(min-width: 1300px)"
+              srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
+      <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
       <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
       <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
       <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
-      <img class="offer__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="271" alt="Кэт энерджи с курицей">
+      <img class="offer__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" width="280"
+           height="271" alt="Кэт энерджи с курицей">
     </picture>
   </section>
   <section class="features container">
@@ -79,52 +82,61 @@
     </ul>
   </section>
   <section class="demo-effect">
-    <div class="demo-effect__title-wrapper">
-      <div class="demo-effect__container container">
-        <h2 class="demo-effect__title">Живой пример</h2>
-      </div>
-    </div>
-    <div class="demo-effect__wrapper">
+    <div class="demo-effect__wrapper container">
+      <h2 class="demo-effect__title">Живой пример</h2>
       <div class="demo-effect__results results">
-        <div class="results__container container">
-          <p class="results__intro">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-            Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему
-            спит по 16 часов в день.</p>
-          <div class="results__wrapper">
-            <dl class="results__list">
-              <div class="results__box">
-                <dt class="results__item results__item--value">5 кг</dt>
-                <dd class="results__item">снижение веса</dd>
-              </div>
-              <div class="results__box">
-                <dt class="results__item results__item--value">60 дней</dt>
-                <dd class="results__item">затрачено времени</dd>
-              </div>
-            </dl>
-            <p class="results__total">Затраты на питание: <span>15 000 руб.</span></p>
-          </div>
+        <p class="results__intro">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+          Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему
+          спит по 16 часов в день.</p>
+        <div class="results__wrapper">
+          <dl class="results__list">
+            <div class="results__box">
+              <dt class="results__item results__item--value">5 кг</dt>
+              <dd class="results__item">снижение веса</dd>
+            </div>
+            <div class="results__box">
+              <dt class="results__item results__item--value">60 дней</dt>
+              <dd class="results__item">затрачено времени</dd>
+            </div>
+          </dl>
+          <p class="results__total">Затраты на питание: <span>15 000 руб.</span></p>
         </div>
       </div>
       <div class="demo-effect__cat-slider cat-slider">
-        <div class="cat-slider__wrapper container">
+        <div class="cat-slider__images">
           <picture>
-            <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1300px)"
+                    srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
             <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-            <img class="cat-slider__img cat-slider__img--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Изображение кота до тренировок">
+            <img class="cat-slider__img cat-slider__img--before" src="img/before-mobile@1x.png"
+                 srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Изображение кота до тренировок">
           </picture>
-          <div class="cat-slider__range-box">
-            <button type="button" class="cat-slider__btn cat-slider__btn--before">Было</button>
-            <div class="cat-slider__range">
-              <div class="cat-slider__scale">
-                <div class="cat-slider__bar"></div>
-                <button type="button" class="cat-slider__control" aria-label="Кнопка управлением состоянием кота"></button>
-              </div>
+          <picture>
+            <source type="image/webp" media="(min-width: 1300px)"
+                    srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+            <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+            <img class="cat-slider__img cat-slider__img--after" src="img/after-mobile@1x.png"
+                 srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="Изображение кота после тренировок">
+          </picture>
+        </div>
+        <div class="cat-slider__range-box">
+          <button type="button" class="cat-slider__btn cat-slider__btn--before">Было</button>
+          <div class="cat-slider__range">
+            <div class="cat-slider__scale">
+              <div class="cat-slider__bar"></div>
+              <button type="button" class="cat-slider__control"
+                      aria-label="Кнопка управлением состоянием кота"></button>
             </div>
-            <button type="button" class="cat-slider__btn cat-slider__btn--after">Стало</button>
           </div>
+          <button type="button" class="cat-slider__btn cat-slider__btn--after">Стало</button>
         </div>
       </div>
     </div>
@@ -132,13 +144,15 @@
 </main>
 <footer class="footer">
   <div class="footer__contact contact">
-    <div class="contact__wrapper container">
+    <div class="contact__wrapper">
       <div class="contact__invite">
         <h3 class="contact__title">Приглашаем <br>к сотрудничеству дилеров!</h3>
         <address class="contact__address"><span>ул. Большая Конюшенная, д. 19/8</span> Санкт-Петербург</address>
       </div>
     </div>
-    <iframe class="contact__map contact__map--nojs" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1413.2283991526597!2d30.32134690877566!3d59.93866701084689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1579113914641!5m2!1sru!2sru&zoom=110&center=0, 100" width="100%" height="400" frameborder="0"  allowfullscreen=""></iframe>
+    <iframe class="contact__map contact__map--nojs"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1413.2283991526597!2d30.32134690877566!3d59.93866701084689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1579113914641!5m2!1sru!2sru&zoom=110&center=0, 100"
+            width="100%" height="400" frameborder="0" allowfullscreen=""></iframe>
   </div>
   <div class="footer__wrapper container">
     <a class="footer__logo">
@@ -147,17 +161,23 @@
     <ul class="footer__social social">
       <li class="social__item">
         <a href="https://vk.com" class="social__link" aria-label="Кэт энерджи в Вконтакте">
-          <svg class="social__icon" width="22" height="12"><use xlink:href="#icon-vk"></use></svg>
+          <svg class="social__icon" width="22" height="12">
+            <use xlink:href="#icon-vk"></use>
+          </svg>
         </a>
       </li>
       <li class="social__item">
         <a href="https://instagram.com" class="social__link" aria-label="Кэт энерджи в Instagram">
-          <svg class="social__icon" width="16" height="16"><use xlink:href="#icon-insta"></use></svg>
+          <svg class="social__icon" width="16" height="16">
+            <use xlink:href="#icon-insta"></use>
+          </svg>
         </a>
       </li>
       <li class="social__item">
         <a href="https://facebook.com" class="social__link" aria-label="Кэт энерджи в Facebook">
-          <svg class="social__icon" width="10" height="19"><use xlink:href="#icon-fb"></use></svg>
+          <svg class="social__icon" width="10" height="19">
+            <use xlink:href="#icon-fb"></use>
+          </svg>
         </a>
       </li>
     </ul>

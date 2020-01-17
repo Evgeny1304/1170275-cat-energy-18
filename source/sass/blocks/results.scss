@@ -60,8 +60,7 @@
 
 @media (min-width: $tablet-width) {
   .results {
-    background-color: $white;
-    padding-bottom: 150px;
+    margin-bottom: 0;
   }
 
   .results__intro {
@@ -112,19 +111,16 @@
 
 @media (min-width: $desktop-width) {
   .results {
-    background-color: $concrete;
     padding-bottom: 0;
     margin-bottom: 0;
-  }
-
-  .results__container {
-    width: auto;
-    padding: 0;
+    order: 3;
+    width: 570px;
+    margin-top: -322px;
   }
 
   .results__intro {
     margin-bottom: 68px;
-    padding-right: 95px;
+    padding-right: 135px;
   }
 
   .results__wrapper {

@@ -16,7 +16,7 @@
 
 @media (min-width: $tablet-width) {
   .demo-effect {
-    background-color: $white;
+    background: linear-gradient(180deg, $white 55%, $concrete 45%);
     padding-top: 10px;
     padding-bottom: 0;
   }
@@ -30,15 +30,9 @@
 
 @media (min-width: $desktop-width) {
   .demo-effect {
-    background-color: $concrete;
+    background: linear-gradient(180deg, $white 23%, $concrete 23%);
     padding-top: 0;
-    padding-bottom: 74px;
-  }
-
-  .demo-effect__title-wrapper {
-    background-color: $white;
-    padding-top: 33px;
-    padding-bottom: 75px;
+    padding-bottom: 69px;
   }
 
   .demo-effect__title {
@@ -47,10 +41,6 @@
 
   .demo-effect__wrapper {
     display: flex;
-    width: $desktop-width;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 72px;
-    margin: 0 auto;
+    flex-wrap: wrap;
   }
 }
