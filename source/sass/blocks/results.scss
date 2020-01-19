@@ -13,6 +13,8 @@
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-bottom: 35px;
 }
 
@@ -20,22 +22,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid #cdcdcd;
-  flex: 1 0 44%;
-  padding: 13px 20px 0 20px;
-
-  &:not(:nth-child(2n)) {
-    margin-right: 32px;
-  }
+  border: 1px solid $silver;
+  border-radius: 4px;
+  padding-top: 13px;
+  width: 124px;
 }
 
 .results__item {
   font-size: 12px;
   line-height: 12px;
   text-align: center;
-  background-color: #f2f2f2;
+  background-color: $concrete;
   margin: 0;
-  margin-bottom: -17px;
+  width: 77px;
+  margin-bottom: -16px;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 .results__item--value {
@@ -44,8 +46,9 @@
   line-height: 24px;
   text-transform: uppercase;
   font-weight: 400;
-  color: #111111;
+  color: $cod-gray;
   margin-bottom: 9px;
+  width: auto;
 }
 
 .results__total {
@@ -53,15 +56,14 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
-  color: #111111;
+  color: $cod-gray;
   text-align: center;
   margin: 0;
 }
 
 @media (min-width: $tablet-width) {
   .results {
-    background-color: #ffffff;
-    padding-bottom: 150px;
+    margin-bottom: 0;
   }
 
   .results__intro {
@@ -78,11 +80,11 @@
 
   .results__list {
     margin-bottom: 0;
+    justify-content: start;
   }
 
   .results__box {
-    flex: 1 0 50%;
-    padding: 13px 16px 0;
+    width: 162px;
 
     &:not(:nth-child(2n)) {
       margin-right: 39px;
@@ -93,7 +95,8 @@
     font-size: 14px;
     line-height: 14px;
     margin-bottom: -6px;
-    background-color: #ffffff;
+    background-color: $white;
+    width: auto;
   }
 
   .results__item--value {
@@ -112,41 +115,36 @@
 
 @media (min-width: $desktop-width) {
   .results {
-    background-color: #f2f2f2;
     padding-bottom: 0;
     margin-bottom: 0;
-  }
-
-  .results__container {
-    width: auto;
-    padding: 0;
+    order: 3;
+    width: 570px;
+    margin-top: -322px;
   }
 
   .results__intro {
     margin-bottom: 68px;
-    padding-right: 95px;
+    padding-right: 135px;
   }
 
   .results__wrapper {
     flex-direction: column;
     align-items: stretch;
     margin-bottom: 0;
-    flex: 1 0 50%;
   }
 
   .results__list {
     margin-bottom: 61px;
   }
 
-  .results__box {
-    max-width: 162px;
-    flex-basis: auto;
-    padding-right: 10px;
-    padding-left: 10px;
-  }
+  //.results__box {
+  //  flex-basis: auto;
+  //  padding-right: 10px;
+  //  padding-left: 10px;
+  //}
 
   .results__item {
-    background-color: #f2f2f2;
+    background-color: $concrete;
   }
 
   .results__total {

@@ -3,7 +3,7 @@
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #111111;
+  color: $cod-gray;
   max-width: 226px;
   margin: 0;
   margin-bottom: 38px;
@@ -16,16 +16,40 @@
   margin-bottom: 10px;
 }
 
+.request__item--contact {
+  margin-bottom: 15px;
+}
+
 .request__item--comment {
-  margin-bottom: 28px;
+  margin-bottom: 25px;
 }
 
 .request__title {
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
-  color: #111111;
-  margin-bottom: 33px;
+  color: $cod-gray;
+  margin-bottom: 34px;
+  z-index: 0;
+  position: relative;
+  padding: 0;
+
+  span {
+    display: block;
+    background-color: $white;
+    padding-right: 20px;
+  }
+
+  &::after {
+    position: absolute;
+    top: 15px;
+    left: 3px;
+    content: "";
+    width: 100vw;
+    height: 3px;
+    background-color: $apple;
+    z-index: -1;
+  }
 }
 
 .request__label {
@@ -36,7 +60,7 @@
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #222222;
+  color: $mine-shaft;
   margin-bottom: 14px;
 
   span {
@@ -44,30 +68,66 @@
   }
 }
 
+.request__label--contact {
+  position: relative;
+
+  span {
+    margin-right: 10px;
+  }
+}
+
+.request__icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.request__icon--phone {
+  top: 13px;
+  right: 13px;
+}
+
 .request__field {
-  border: 1px solid rgba(#cdcdcd, 0.5);
-  padding-left: 14px;
-  padding-right: 10px;
-  padding-top: 6px;
+  border: 1px solid rgba($silver, 0.5);
+  padding: 14px;
   height: 45px;
   flex-grow: 1;
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $tundora;
+  outline: none;
 
   &::placeholder {
-    font-family: "Oswald", "Arial", sans-serif;
     font-size: 16px;
     line-height: 18px;
-    font-weight: 400;
     text-transform: uppercase;
     color: $tundora;
+    opacity: 1;
   }
 
   &:hover {
-    border: 1px solid #cdcdcd;
+    border: 1px solid $silver;
   }
 
   &:focus {
-    border: 2px solid $tundora;
+    border: 1px solid $tundora;
+    box-shadow: 0 0 0 1px $tundora;
   }
+}
+
+.request__field:focus ~ .request__icon {
+  fill: $apple;
+}
+
+.request__field--error {
+  border: 1px solid $vivid-tangerine;
+  box-shadow: 0 0 0 1px $vivid-tangerine;
+}
+
+.request__field--error ~ .request__icon {
+  fill: $vivid-tangerine;
 }
 
 .request__field--age {
@@ -76,41 +136,56 @@
 
 .request__comment {
   resize: none;
-  border: 1px solid rgba(#cdcdcd, 0.5);
-  padding: 15px;
+  border: 1px solid rgba($silver, 0.5);
+  padding: 13px;
   width: 100%;
+  height: 150px;
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $tundora;
+  outline: none;
+  overflow: auto;
 
   &::placeholder {
-    font-family: "Oswald", "Arial", sans-serif;
     font-size: 16px;
     line-height: 18px;
-    font-weight: 400;
     text-transform: uppercase;
     color: $tundora;
+    opacity: 1;
+  }
+
+  &:hover {
+    border: 1px solid $silver;
+  }
+
+  &:focus {
+    border: 1px solid $tundora;
+    box-shadow: 0 0 0 1px $tundora;
   }
 }
 
 .request__btn {
-  border: none;
-  cursor: pointer;
+  @include btn;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
-  color: #ffffff;
+  color: $white;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   background-color: $apple;
-  padding: 13px 77px 11px 77px;
+  padding: 12px 78px 11px;
   margin-bottom: 20px;
 
   &:hover,
   &:focus {
-    background-color: #5eaa2f;
+    background-color: $apple-hover;
   }
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
-    background-color: #5eaa2f;
+    background-color: $apple-hover;
   }
 }
 
@@ -120,6 +195,12 @@
   line-height: 16px;
   text-align: center;
   margin: 0;
+}
+
+@media (max-width: $mobile-width-only) {
+  .request__title span {
+    max-width: 210px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -138,10 +219,36 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 78px;
+
+    span {
+      padding: 0 38px;
+      margin-left: -40px;
+    }
+
+    &::after {
+      top: 20px;
+      left: auto;
+      right: -30px;
+    }
+
+    &::before {
+      position: absolute;
+      top: 20px;
+      left: -30px;
+      content: "";
+      width: 100vw;
+      height: 3px;
+      background-color: $apple;
+      z-index: -1;
+    }
   }
 
   .request__item {
-    margin-bottom: 43px;
+    margin-bottom: 50px;
+  }
+
+  .request__item--contact {
+    margin-bottom: 44px;
   }
 
   .request__item--product .request__title {
@@ -154,14 +261,30 @@
     margin-bottom: 20px;
   }
 
+  .request__label--contact span {
+    margin-right: 20px;
+  }
+
   .request__field {
     height: 52px;
-    padding-left: 23px;
+    padding-left: 20px;
+    font-size: 20px;
+    line-height: 20px;
 
     &::placeholder {
       font-size: 20px;
       line-height: 20px;
     }
+  }
+
+  .request__icon {
+    top: 20px;
+    right: 20px;
+  }
+
+  .request__icon--phone {
+    top: 17px;
+    right: 17px;
   }
 
   .request__item--comment {
@@ -170,11 +293,14 @@
 
   .request__comment {
     min-height: 174px;
-  }
-
-  .request__comment::placeholder {
     font-size: 20px;
     line-height: 20px;
+    padding-left: 18px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 20px;
+    }
   }
 
   .request__wrap {
@@ -203,8 +329,16 @@
   .request__item {
     margin-bottom: 50px;
 
+    &--contact {
+      margin-bottom: 44px;
+    }
+
+    &--comment {
+      margin-bottom: 60px;
+    }
+
     &--product {
-      margin-bottom: 63px;
+      margin-bottom: 20px;
     }
   }
 
@@ -214,14 +348,24 @@
   }
 
   .request__box .request__item {
-    flex-basis: 46.7%;
+    width: 570px;
   }
 
   .request__box .request__label {
-    flex-basis: 46.7%;
+    width: 570px;
   }
 
   .request__btn {
     margin-right: 81px;
+    flex-basis: auto;
+    width: 570px;
+  }
+
+  .request__title::after {
+    right: -40px;
+  }
+
+  .request__title::before {
+    left: -40px;
   }
 }

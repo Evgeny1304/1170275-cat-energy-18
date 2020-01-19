@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 *,
@@ -16,10 +17,16 @@ body {
   font-weight: 400;
   color: $tundora;
   min-width: 320px;
+  overflow-x: hidden;
 }
 
 a {
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden:not(:focus):not(:active),

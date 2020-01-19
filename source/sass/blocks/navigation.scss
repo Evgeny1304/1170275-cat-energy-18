@@ -15,21 +15,33 @@
 }
 
 .navigation--closed .navigation__toggle {
-  background-image: url("../../img/icon-mobile-menu.svg");
+  background-image: url("../img/icon-mobile-menu.svg");
 }
 
 .navigation--open .navigation__toggle {
   width: 19px;
-  background-image: url("../../img/icon-close.svg");
+  background-image: url("../img/icon-close.svg");
 }
 
 @media (max-width: $mobile-width-only) {
   .navigation--closed .menu {
     display: none;
   }
+
+  .navigation--nojs .navigation__toggle {
+    display: none;
+  }
+
+  .navigation--nojs .menu {
+    display: block;
+  }
 }
 
 @media (min-width: $tablet-width) {
+  .navigation {
+    margin-left: auto;
+  }
+
   .navigation__toggle {
     display: none;
   }

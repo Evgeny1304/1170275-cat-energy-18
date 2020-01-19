@@ -10,14 +10,16 @@
   padding-right: 20px;
   border-bottom: 1px solid rgba($tundora, 0.1);
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
 }
 
 .products__box {
-  display: flex;
-  align-items: center;
-  margin-bottom: -2px;
+  width: 50%;
+}
+
+.products__image-wrap {
+  min-width: 140px;
 }
 
 .products__title {
@@ -26,7 +28,7 @@
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #111111;
+  color: $cod-gray;
   margin: 0;
   margin-bottom: 13px;
   padding-right: 45px;
@@ -36,7 +38,7 @@
   @include element-block;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
-  color: #ffffff;
+  color: $white;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -48,12 +50,12 @@
 
   &:hover,
   &:focus {
-    background-color: #5eaa2f;
+    background-color: $apple-hover;
   }
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
-    background-color: #5eaa2f;
+    background-color: $apple-hover;
   }
 }
 
@@ -71,6 +73,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .products__icon {
@@ -87,20 +90,19 @@
 }
 
 .products__link--btn {
-  border: none;
-  cursor: pointer;
+  @include btn;
   color: $tundora;
-  background-color: #f2f2f2;
+  background-color: $concrete;
   padding-left: 0;
   padding-right: 0;
 
   &:hover,
   &:focus {
-    background-color: #ebebeb;
+    background-color: $gallery-hover;
   }
 
   &:active {
-    background-color: #ebebeb;
+    background-color: $gallery-hover;
     color: rgba($tundora, 0.3);
   }
 }
@@ -114,11 +116,12 @@
   }
 
   .products__item {
+    display: block;
     border: none;
-    background: linear-gradient(180deg, #ffffff 10%, #f2f2f2 10%);
+    background: linear-gradient(180deg, $white 10%, $concrete 10%);
     width: 324px;
     margin-bottom: 93px;
-    padding: 0 37px 37px 37px;
+    padding: 0 0 37px 0;
 
 
     &:not(:nth-child(2n)) {
@@ -131,7 +134,7 @@
   }
 
   .products__box {
-    flex-direction: column;
+    width: auto;
     margin-bottom: 28px;
   }
 
@@ -164,6 +167,7 @@
   .products__link {
     padding: 13px 95px;
     width: auto;
+    margin-left: 36px;
   }
 
   .products__item--show-product {
@@ -178,7 +182,8 @@
   }
 
   .products__content {
-    border: 1px solid #cdcdcd;
+    width: auto;
+    border: 1px solid $silver;
     padding: 55px 37px 40px 37px;
   }
 
@@ -197,6 +202,7 @@
 
   .products__link--btn {
     padding: 13px 78px;
+    margin-left: 0;
   }
 }
 

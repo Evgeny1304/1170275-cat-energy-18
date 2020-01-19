@@ -1,11 +1,11 @@
 .product-list {
   @include list-transform;
   margin-top: 5px;
-  margin-bottom: 17px;
+  margin-bottom: 27px;
 }
 
 .product-list__item:not(:last-child) {
-  margin-bottom: 13px;
+  margin-bottom: 25px;
 }
 
 .product-list__label {
@@ -13,13 +13,12 @@
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #222222;
+  color: $mine-shaft;
   display: block;
   cursor: pointer;
   user-select: none;
   position: relative;
   padding-left: 46px;
-  padding-bottom: 12px;
 }
 
 .product-list__checkbox + .product-list__label::before {
@@ -29,7 +28,7 @@
   content: "";
   width: 30px;
   height: 30px;
-  border: solid 1px #cdcdcd;
+  border: solid 1px $silver;
 }
 
 .product-list__checkbox:checked + .product-list__label::after {
@@ -39,17 +38,17 @@
   content: "";
   width: 22px;
   height: 17px;
-  background-image: url("../../img/icon-tick.svg");
+  background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
 }
 
 .product-list__checkbox:hover + .product-list__label::before,
 .product-list__checkbox:focus + .product-list__label::before {
-  border: solid 1px #bababa;
+  border: solid 1px $dark-silver;
 }
 
 .product-list__checkbox:focus + .product-list__label::before {
-  box-shadow: 0 0 5px 5px #4d90fe;
+  box-shadow: 0 0 0 2px $anakiwa;
 }
 
 .product-list__checkbox:active + .product-list__label {
@@ -63,13 +62,13 @@
     justify-content: space-between;
     padding-right: 101px;
     margin-top: 0;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
   }
 
   .product-list__item {
     &:nth-child(1),
     &:nth-child(2) {
-      margin-bottom: 39px;
+      margin-bottom: 50px;
     }
 
     &:nth-child(3) {
@@ -88,12 +87,12 @@
   }
 
   .product-list__checkbox + .product-list__label::before {
+    top: -10px;
     width: 40px;
     height: 40px;
   }
 
   .product-list__checkbox:checked + .product-list__label::after {
-    top: 6px;
     left: 11px;
   }
 }
@@ -101,18 +100,24 @@
 @media (min-width: $desktop-width) {
   .product-list {
     margin-bottom: 0;
+    justify-content: initial;
   }
 
   .product-list__item {
     margin-bottom: 0;
 
-    &:nth-child(1),
+    &:nth-child(1) {
+      margin-right: 103px;
+    }
+
     &:nth-child(2) {
       margin-bottom: 0;
+      margin-right: 137px;
     }
 
     &:nth-child(4) {
       padding-right: 0;
+      margin-left: auto;
     }
   }
 }
