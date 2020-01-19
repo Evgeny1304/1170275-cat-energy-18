@@ -134,6 +134,10 @@
   width: 170px;
 }
 
+.request__label--contact .request__field {
+  padding-right: 45px;
+}
+
 .request__comment {
   resize: none;
   border: 1px solid rgba($silver, 0.5);
@@ -301,6 +305,10 @@
       font-size: 20px;
       line-height: 20px;
     }
+  }
+
+  .request__label--contact .request__field {
+    padding-right: 50px;
   }
 
   .request__wrap {

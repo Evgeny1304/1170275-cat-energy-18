@@ -143,17 +143,18 @@
 
   .cat-slider__btn {
     font-size: 20px;
+    padding-bottom: 6px;
     border-bottom: 1px dotted rgba($tundora, 0.23);
 
     &:hover,
     &:focus {
-      border-bottom: 1px solid rgba($tundora, 0.23);
+      border-bottom: 1px solid rgba($tundora, 0.4);
     }
 
     &:active {
       border-bottom: 1px solid transparent;
     }
-  }
+  }git
 }
 
 @media (min-width: $desktop-width) {
