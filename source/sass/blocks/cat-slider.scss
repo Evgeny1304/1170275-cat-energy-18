@@ -1,13 +1,14 @@
 .cat-slider__images {
   position: relative;
-  min-height: 240px;
+  min-height: 210px;
   margin-bottom: 29px;
 }
 
 .cat-slider__img {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 50%;
+  margin-left: -140px;
 
   &--after {
     z-index: -1;
@@ -75,6 +76,7 @@
   .cat-slider__img {
     width: 690px;
     height: 517px;
+    margin-left: 0;
 
     &--before {
       left: 10px;

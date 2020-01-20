@@ -20,6 +20,7 @@
   line-height: 18px;
   padding-left: 80px;
   position: relative;
+  min-height: 50px;
 
   &::before {
     position: absolute;
@@ -101,6 +102,7 @@
     width: 46%;
     margin-bottom: 89px;
     z-index: 0;
+    height: auto;
 
     &::before {
       top: 10px;

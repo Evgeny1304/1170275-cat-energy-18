@@ -23,8 +23,29 @@
   background-image: url("../img/icon-close.svg");
 }
 
+.navigation__menu {
+  @include list-transform;
+  border-top: 1px solid rgba($tundora, 0.1);
+  margin-right: -20px;
+  margin-left: -20px;
+}
+
+.navigation__menu-link {
+  @include element-block;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  color: $cod-gray;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  width: 100%;
+  border-bottom: 1px solid rgba($tundora, 0.1);
+}
+
 @media (max-width: $mobile-width-only) {
-  .navigation--closed .menu {
+  .navigation--closed .navigation__menu {
     display: none;
   }
 
@@ -32,7 +53,7 @@
     display: none;
   }
 
-  .navigation--nojs .menu {
+  .navigation--nojs .navigation__menu {
     display: block;
   }
 }
@@ -44,5 +65,74 @@
 
   .navigation__toggle {
     display: none;
+  }
+
+  .navigation__menu {
+    display: flex;
+    border: none;
+    margin-right: 0;
+    margin-left: 0;
+    flex-wrap: wrap;
+    max-width: 485px;
+  }
+
+  .navigation__menu-item {
+    &:not(:last-child) {
+      margin-right: 35px;
+    }
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+
+  .navigation__menu-link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: $mine-shaft;
+    border: none;
+    padding: 0;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .navigation__menu-link--active {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -7px;
+      height: 2px;
+      background-color: $apple;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .navigation__menu-link {
+    font-size: 20px;
+    color: $cod-gray;
+  }
+
+  .navigation__menu-item--main {
+    .navigation__menu-link {
+      color: $white;
+    }
+
+    .navigation__menu-link--active::before {
+      background-color: $white;
+      bottom: -9px;
+    }
   }
 }
