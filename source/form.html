@@ -44,30 +44,30 @@
           <legend class="request__title visually-hidden"><span>Информация о коте</span></legend>
           <label class="request__label">
             <span>Имя:*</span>
-            <input type="text" placeholder="Барсик" class="request__field">
+            <input type="text" name="Cats name" placeholder="Барсик" class="request__field">
           </label>
           <label class="request__label">
             <span>Вес (кг):*</span>
-            <input type="text" placeholder="7" class="request__field">
+            <input type="text" name="Cats weight" placeholder="7" class="request__field">
           </label>
           <label class="request__label">
             <span>Возраст (лет):</span>
-            <input type="text" placeholder="7" class="request__field request__field--age">
+            <input type="text" name="Cats age" placeholder="7" class="request__field request__field--age">
           </label>
         </fieldset>
         <fieldset class="request__item">
           <legend class="request__title visually-hidden"><span>Выбор программы</span></legend>
           <ul class="request__list program">
             <li class="program__item">
-              <input id="prog1" type="radio" name="prog-group" class="program__radio visually-hidden" checked>
+              <input id="prog1" type="radio" name="Program-select" class="program__radio visually-hidden" checked>
               <label for="prog1" class="program__label">Похудение</label>
             </li>
             <li class="program__item">
-              <input id="prog2" type="radio" name="prog-group" class="program__radio visually-hidden">
+              <input id="prog2" type="radio" name="Program-select" class="program__radio visually-hidden">
               <label for="prog2" class="program__label">Набор массы</label>
             </li>
             <li class="program__item">
-              <input id="prog3" type="radio" name="prog-group" class="program__radio visually-hidden">
+              <input id="prog3" type="radio" name="Program-select" class="program__radio visually-hidden">
               <label for="prog3" class="program__label">Не знаю (Нужен ваш совет)</label>
             </li>
           </ul>
@@ -78,37 +78,37 @@
         <div class="request__box">
           <label class="request__label request__label--contact">
             <span>E-mail:*</span>
-            <input type="email" placeholder="kuklachev@gmail.com" class="request__field">
+            <input type="email" name="E-mail" placeholder="kuklachev@gmail.com" class="request__field">
             <svg class="request__icon" width="18" height="14"><use xlink:href="#icon-mail"></use></svg>
           </label>
           <label class="request__label request__label--contact">
             <span>Телефон:*</span>
-            <input type="text" placeholder="8 (960) 900-60-90" class="request__field">
+            <input type="text" name="Phone number" placeholder="8 (960) 900-60-90" class="request__field">
             <svg class="request__icon request__icon--phone" width="21" height="21"><use xlink:href="#icon-phone"></use></svg>
           </label>
         </div>
       </fieldset>
       <fieldset class="request__item request__item--comment">
         <legend class="request__title"><span>Комментарий</span></legend>
-        <textarea name="comment-text" class="request__comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <textarea name="Comment" class="request__comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
       <fieldset class="request__item request__item--product">
         <legend class="request__title"><span>Дополнительно</span></legend>
         <ul class="request__list product-list">
           <li class="product-list__item">
-            <input id="prod1" type="checkbox" class="product-list__checkbox visually-hidden" checked>
+            <input id="prod1" type="checkbox" name="Product-select" class="product-list__checkbox visually-hidden" checked>
             <label for="prod1" class="product-list__label">Сахарозаменитель</label>
           </li>
           <li class="product-list__item">
-            <input id="prod2" type="checkbox" class="product-list__checkbox visually-hidden">
+            <input id="prod2" type="checkbox" name="Product-select" class="product-list__checkbox visually-hidden">
             <label for="prod2" class="product-list__label">Питьевая вода</label>
           </li>
           <li class="product-list__item">
-            <input id="prod3" type="checkbox" class="product-list__checkbox visually-hidden">
+            <input id="prod3" type="checkbox" name="Product-select" class="product-list__checkbox visually-hidden">
             <label for="prod3" class="product-list__label">Молоко</label>
           </li>
           <li class="product-list__item">
-            <input id="prod4" type="checkbox" class="product-list__checkbox visually-hidden">
+            <input id="prod4" type="checkbox" name="Product-select" class="product-list__checkbox visually-hidden">
             <label for="prod4" class="product-list__label">Витамины</label>
           </li>
         </ul>
