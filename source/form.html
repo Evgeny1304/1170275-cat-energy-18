@@ -83,7 +83,7 @@
           </label>
           <label class="request__label request__label--contact">
             <span>Телефон:*</span>
-            <input type="text" name="Phone number" placeholder="8 (960) 900-60-90" class="request__field" required>
+            <input type="tel" name="Phone number" placeholder="8 (960) 900-60-90" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" class="request__field" required>
             <svg class="request__icon request__icon--phone" width="21" height="21"><use xlink:href="#icon-phone"></use></svg>
           </label>
         </div>

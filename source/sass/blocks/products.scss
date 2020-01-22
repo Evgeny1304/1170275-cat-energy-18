@@ -166,7 +166,7 @@
 
   .products__link {
     padding: 13px 95px;
-    width: auto;
+    max-width: 249px;
     margin-left: 36px;
   }
 
@@ -231,6 +231,7 @@
 
   .products__link {
     padding: 13px 55px;
+    max-width: 169px;
   }
 
   .products__link--btn {
