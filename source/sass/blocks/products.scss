@@ -32,6 +32,7 @@
   margin: 0;
   margin-bottom: 13px;
   padding-right: 45px;
+  overflow: hidden;
 }
 
 .products__link {
@@ -185,11 +186,11 @@
   .products__content {
     width: auto;
     border: 1px solid $silver;
-    padding: 55px 37px 40px 37px;
+    padding: 51px 37px 40px 37px;
   }
 
   .products__icon {
-    margin-bottom: 47px;
+    margin-bottom: 49px;
     width: 61px;
     height: 61px;
   }
@@ -212,6 +213,7 @@
     flex-basis: auto;
     width: 245px;
     margin-right: 0;
+    margin-bottom: 98px;
 
     &:not(:nth-child(2n)) {
       margin-right: 0;
@@ -231,7 +233,7 @@
   }
 
   .products__link {
-    padding: 13px 55px;
+    padding: 11px 55px;
     max-width: 169px;
   }
 
